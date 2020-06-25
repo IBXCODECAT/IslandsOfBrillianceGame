@@ -36,7 +36,7 @@ public class PlayerBuilding : MonoBehaviour
 
     public Text instructions;
 
-    private Dictionary<GameObject, int> worldState = new Dictionary<GameObject, int>();
+    public Dictionary<GameObject, int> worldState = new Dictionary<GameObject, int>();
 
     bool useNormal = true;
 
