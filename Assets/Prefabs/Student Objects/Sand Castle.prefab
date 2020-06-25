@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4390419603134019579}
   - component: {fileID: 3654787153539297980}
+  - component: {fileID: 5651879607134998399}
   m_Layer: 9
   m_Name: Sand Castle
   m_TagString: DestroyMe
@@ -43,8 +44,21 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.7355398, y: 1.4950948, z: 0.75853634}
-  m_Center: {x: 0, y: 0.7448473, z: 0.020121992}
+  m_Size: {x: 1.0802109, y: 2.2655368, z: 1.1336198}
+  m_Center: {x: 0.010137439, y: 1.1300683, z: 0.0049159527}
+--- !u!65 &5651879607134998399
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2231228200241480159}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0802109, y: 2.2655368, z: 1.1336198}
+  m_Center: {x: 0.010137439, y: 1.1300683, z: 0.0049159527}
 --- !u!1001 &3513253336648442819
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -110,7 +124,17 @@ PrefabInstance:
     - target: {fileID: 1350553345424285457, guid: 883c5d2614b95e04b989995826ea8fc9,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9990001
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350553345424285457, guid: 883c5d2614b95e04b989995826ea8fc9,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350553345424285457, guid: 883c5d2614b95e04b989995826ea8fc9,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2658663939779079426, guid: 883c5d2614b95e04b989995826ea8fc9,
         type: 3}
