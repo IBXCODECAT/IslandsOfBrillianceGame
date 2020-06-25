@@ -23,9 +23,16 @@ public class GameManager : MonoBehaviour
         island = PlayerPrefs.GetInt("IslandCount");
         islands[island].SetActive(true);
 
+        StartCoroutine(LoadVolumeSettings());
+    }
+
+    private IEnumerator LoadVolumeSettings()
+    {
+        yield return new WaitForSeconds(.01f);
+
         for (int i = 0; i < VolumeList.Length; i++)
         {
-            Mixer.SetFloat(VolumeList[i], PlayerPrefs.GetFloat(PlayerPrefList[i]));
+            Mixer.SetFloat(VolumeList[i], Mathf.Log10(PlayerPrefs.GetFloat(PlayerPrefList[i])) * 20);
         }
     }
 
