@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PlayerBuilding : MonoBehaviour
 {
     public List<GameObject> buildingOptions;
     public List<Sprite> buildingIcons;
 
+    public int buildLimit = 250;
     public float rayDistance = 100;
     public float rotateSpeed = 5f;
     public LayerMask environmentLayer;
@@ -33,6 +35,7 @@ public class PlayerBuilding : MonoBehaviour
     public GameObject scaleSelection;
     public GameObject destroyModeSelection;
     public Image selectionImage;
+    public TextMeshProUGUI buildLimitText;
 
     public Text instructions;
 
@@ -61,8 +64,6 @@ public class PlayerBuilding : MonoBehaviour
         rotationSelection.SetActive(false); //Rotating the object along the selected axis
         scaleSelection.SetActive(false); //Scaling Axis Selection
         destroyModeSelection.SetActive(false); //Destory or go back
-
-        instructions.text = "press 1 for build mode, and 2 for destroy mode. ";
     }
 
     private void Start()
@@ -78,6 +79,8 @@ public class PlayerBuilding : MonoBehaviour
         renderer.SetPosition(0, Vector3.zero);
         renderer.SetPosition(1, Vector3.zero);
         renderer.endColor = Color.blue;
+
+        buildLimitText.text = "Build Limit: " + worldState.Count + " / " + buildLimit;
     }
 
     bool buildMode = false;
@@ -93,8 +96,6 @@ public class PlayerBuilding : MonoBehaviour
 
     private void Update()
     {
-        RaycastHit hit;
-
         GetInput();
 
         if (Input.GetKeyDown(KeyCode.Tab))
@@ -112,6 +113,11 @@ public class PlayerBuilding : MonoBehaviour
         }
         
         ResetMenu();
+
+        if (worldState.Count < buildLimit)
+            buildLimitText.text = "Build Limit: " + worldState.Count + " / " + buildLimit;
+        else
+            buildLimitText.text = "Build Limit Reached!";
     }
 
     void ResetMenu()
@@ -444,13 +450,16 @@ public class PlayerBuilding : MonoBehaviour
 
     void Stamp()
     {
-        Vector3 pos = currentSelectionPreview.transform.position;
-        Quaternion rot = currentSelectionPreview.transform.rotation;
-        Vector3 scale = currentSelectionPreview.transform.localScale;
+        if(worldState.Count < buildLimit)
+        {
+            Vector3 pos = currentSelectionPreview.transform.position;
+            Quaternion rot = currentSelectionPreview.transform.rotation;
+            Vector3 scale = currentSelectionPreview.transform.localScale;
 
-        GameObject buildObject = Instantiate(buildingOptions[currentSelection], pos, rot);
-        worldState.Add(buildObject, currentSelection);
-        buildObject.transform.localScale = scale;
+            GameObject buildObject = Instantiate(buildingOptions[currentSelection], pos, rot);
+            worldState.Add(buildObject, currentSelection);
+            buildObject.transform.localScale = scale;
+        }
     }
 
     IEnumerator UpdateLineRender(int updateDelay)
