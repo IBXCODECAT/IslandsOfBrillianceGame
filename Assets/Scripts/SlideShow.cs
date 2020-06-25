@@ -17,11 +17,16 @@ public class SlideShow : MonoBehaviour
     private int num;
 
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
         image.color = new Color(1, 1, 1, 0);
         num = 0;
         StartCoroutine(ChangeImage());
+    }
+
+    private void OnDisable()
+    {
+        StopAllCoroutines();
     }
 
     private IEnumerator ChangeImage()
