@@ -18997,7 +18997,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 134676, guid: 6488b6e6bbe8a9c4585b531a71d8211c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 440718, guid: 6488b6e6bbe8a9c4585b531a71d8211c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19622,12 +19622,12 @@ PrefabInstance:
     - target: {fileID: 9194707614889539970, guid: b5133ce251941d84088f111843ce9a7e,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9194707614946912041, guid: b5133ce251941d84088f111843ce9a7e,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9194707615210064580, guid: b5133ce251941d84088f111843ce9a7e,
         type: 3}
@@ -19702,12 +19702,12 @@ PrefabInstance:
     - target: {fileID: 9194707615652189977, guid: b5133ce251941d84088f111843ce9a7e,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9194707615950011269, guid: b5133ce251941d84088f111843ce9a7e,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5133ce251941d84088f111843ce9a7e, type: 3}
@@ -19848,6 +19848,7 @@ MonoBehaviour:
   windowsWater: {fileID: 839209059}
   light: {fileID: 705507993}
   windowsLight: {fileID: 1966840926}
+  rotSpeed: 100
   skybox: {fileID: 2100000, guid: 9a723980b3a117347a3c0adfb25bad50, type: 2}
   windowsSkybox: {fileID: 2100000, guid: 272d737643df1ed48aeca1f73092da0e, type: 2}
 --- !u!1 &1946125699
@@ -20136,7 +20137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &1966840927
 Light:
   m_ObjectHideFlags: 0

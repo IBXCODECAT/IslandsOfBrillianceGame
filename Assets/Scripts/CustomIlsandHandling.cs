@@ -8,6 +8,7 @@ public class CustomIlsandHandling : MonoBehaviour
     public GameObject windowsWater;
     public GameObject light;
     public GameObject windowsLight;
+    public int rotSpeed;
 
     public Material skybox;
     public Material windowsSkybox;
@@ -22,6 +23,10 @@ public class CustomIlsandHandling : MonoBehaviour
 
     }
 
+    void Update()
+    {
+        RenderSettings.skybox.SetFloat("_Rotation", Time.time * rotSpeed);
+    }
     void OnDisable()
     {
         water.SetActive(true);
