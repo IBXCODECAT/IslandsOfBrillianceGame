@@ -71,5 +71,35 @@ public class GameManager : MonoBehaviour
         }
         return worldState;
     }
+
+    public void ResetIsland()
+    {
+        PlayerBuilding playerBuilding = GameObject.Find("Player").GetComponent<PlayerBuilding>();
+
+        if(playerBuilding)
+        {
+            List<GameObject> activeObjects = new List<GameObject>();
+
+            foreach(KeyValuePair<GameObject, int> go in playerBuilding.worldState)
+                activeObjects.Add(go.Key);
+
+            playerBuilding.worldState.Clear();
+
+            foreach(GameObject go in activeObjects)
+                Destroy(go);
+
+            activeObjects.Clear();
+        }
+
+        List<Vector3> positions = new List<Vector3>();
+        List<Quaternion> rotations = new List<Quaternion>();
+        List<Vector3> scales = new List<Vector3>();
+        List<int> objectIndex = new List<int>();
+
+        PlayerPrefsX.SetVector3Array("objectPositions" + island, positions.ToArray());
+        PlayerPrefsX.SetQuaternionArray("objectRotations" + island, rotations.ToArray());
+        PlayerPrefsX.SetVector3Array("objectScales" + island, scales.ToArray());
+        PlayerPrefsX.SetIntArray("objectsIndex" + island, objectIndex.ToArray());
+    }
 }
  
