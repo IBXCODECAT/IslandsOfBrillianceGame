@@ -153,7 +153,6 @@ public class PlayerBuilding : MonoBehaviour
         if (buildMode)
         {
             Preview();
-
             Debug.Log("In Build Mode");
 
             instructions.text = "press 1 to select an object, 2 to rotate your object, or 3 to scale your object. Press right click to go back";

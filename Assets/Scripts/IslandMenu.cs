@@ -17,6 +17,7 @@ public class IslandMenu : MonoBehaviour
     public void Start() 
     {
         displayimage.sprite = IslandImages[0]; //sets the sprite variable of the displayimage to equal the first item in the IslandImages group/array
+        text.text = SetName();
     }
 
     //I understand that the index is used if index is greater than 0, subtracts the index value by 1 and sets the sprite variable of the displayimage to be one of the IslandImages depending on what value index is.
@@ -27,7 +28,7 @@ public class IslandMenu : MonoBehaviour
             index -= 1; //subtracts the index value by 1
         }
         displayimage.sprite = IslandImages[index]; //sets the sprite variable of the displayimage to be one of the IslandImages depending on what value index is
-        text.text = IslandImages[index].name;
+        text.text = SetName();
     }
 
     //I understand that the index < Island Images.Length - 1 is used if index is less than the value of IslandImages.Length - 1, the index += 1 adds 1 to the index value and the displayimage.sprite = IslandImages[index] sets the sprite variable of the displayimage to be one of the IslandImages depending on what value index is.
@@ -38,7 +39,19 @@ public class IslandMenu : MonoBehaviour
             index += 1; //adds 1 to the index value
         }
         displayimage.sprite = IslandImages[index]; //sets the sprite variable of the displayimage to be one of the IslandImages depending on what value index is
-        text.text = IslandImages[index].name;
+
+        text.text = SetName();
+    }
+
+    string SetName()
+    {
+        string name = IslandImages[index].name;
+        int marker = name.IndexOf("(");
+
+        if (marker > 0)
+            return name.Substring(0, marker);
+        else
+            return name;
     }
 
     //I understand that the PlayerPrefs.SetInt("IslandCount", index); saves a value that can be used to determind what island to spawn in. IslandCount is the value set by index. Index is the value setting IslandCount.
