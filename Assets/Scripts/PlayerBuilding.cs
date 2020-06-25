@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class PlayerBuilding : MonoBehaviour
 {
     public List<GameObject> buildingOptions;
+    public List<Sprite> buildingIcons;
+
     public float rayDistance = 100;
     public float rotateSpeed = 5f;
     public LayerMask environmentLayer;
@@ -30,6 +32,7 @@ public class PlayerBuilding : MonoBehaviour
     public GameObject rotationSelection;
     public GameObject scaleSelection;
     public GameObject destroyModeSelection;
+    public Image selectionImage;
 
     public Text instructions;
 
@@ -342,6 +345,8 @@ public class PlayerBuilding : MonoBehaviour
             Debug.Log(currentSelectionPreview); //Already Known
         }
 
+        if(selectionImage.sprite != buildingIcons[currentSelection])
+            selectionImage.sprite = buildingIcons[currentSelection];
         //Debug.Log("Current selection: " + currentSelection); 
 
         //Debug.LogError("The current selection is not within the bounds of the array!");

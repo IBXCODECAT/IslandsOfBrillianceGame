@@ -20,7 +20,7 @@ public class FalloutCatcher : MonoBehaviour
         {
             Debug.Log("fell to far reset");
             PlyrCtrlDisable.enabled = false;
-            transform.position = new Vector3(transform.position.x, spwnHeight, transform.position.z);
+            transform.position = new Vector3(0, spwnHeight, 0);
             PlyrCtrlDisable.enabled = true;
         } 
     }

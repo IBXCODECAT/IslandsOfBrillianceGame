@@ -40,7 +40,6 @@ public class SlideShow : MonoBehaviour
 
     private IEnumerator ImageFadeIn()
     {
-        yield return new WaitForSeconds(fadeDelay);
 
         for (float i = 0; i < 1.2; i += fadeInRate)
         {
@@ -62,5 +61,7 @@ public class SlideShow : MonoBehaviour
         }
 
         StartCoroutine(ChangeImage());
+
+        yield return new WaitForSeconds(fadeDelay);
     }
 }

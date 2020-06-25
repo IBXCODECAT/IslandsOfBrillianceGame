@@ -22,15 +22,15 @@ public class GameManager : MonoBehaviour
 
         island = PlayerPrefs.GetInt("IslandCount");
         islands[island].SetActive(true);
-    }
 
-    public void GameSave(Dictionary<GameObject, int> worldState) 
-    {
         for (int i = 0; i < VolumeList.Length; i++)
         {
             Mixer.SetFloat(VolumeList[i], PlayerPrefs.GetFloat(PlayerPrefList[i]));
         }
+    }
 
+    public void GameSave(Dictionary<GameObject, int> worldState) 
+    {
         int template = PlayerPrefs.GetInt("IslandCount");
         islands[template].SetActive(true);
         List<Vector3> positions = new List<Vector3>();

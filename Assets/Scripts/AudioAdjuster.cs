@@ -14,14 +14,13 @@ public class AudioAdjuster : MonoBehaviour
     public string playerprefName;
 
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
         if (PlayerPrefs.HasKey(playerprefName))
         {
             slider.value = PlayerPrefs.GetFloat(playerprefName);
         }
-
-        else;
+        else
         {
             PlayerPrefs.SetFloat(playerprefName, slider.value);
         }
