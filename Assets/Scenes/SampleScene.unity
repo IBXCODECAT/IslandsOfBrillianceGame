@@ -17038,8 +17038,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece58d824dccfdb41911907dde9f8ad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  water0: {fileID: 2100000, guid: f59ea535bb715ca4da8afac832fd36eb, type: 2}
-  water1: {fileID: 2100000, guid: 6363f60797ab0fb49b1ff852b0978304, type: 2}
 --- !u!1 &317004156
 GameObject:
   m_ObjectHideFlags: 0
@@ -41976,8 +41974,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece58d824dccfdb41911907dde9f8ad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  water0: {fileID: 2100000, guid: f59ea535bb715ca4da8afac832fd36eb, type: 2}
-  water1: {fileID: 2100000, guid: 6363f60797ab0fb49b1ff852b0978304, type: 2}
 --- !u!1 &757271372
 GameObject:
   m_ObjectHideFlags: 0
@@ -75232,6 +75228,11 @@ PrefabInstance:
     - target: {fileID: 917447518, guid: 7b7a9ed307d94fb4abce2fbd39823c71, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7726281431472601224, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7726281431472601226, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
         type: 3}
