@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - DestroyMe
+  - PickMeUpBro
   layers:
   - Default
   - TransparentFX

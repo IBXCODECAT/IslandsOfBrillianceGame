@@ -3996,6 +3996,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 298739052}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &298739059 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7726281432159702721, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
+    type: 3}
+  m_PrefabInstance: {fileID: 1271384555}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &336724757
 GameObject:
   m_ObjectHideFlags: 0
@@ -12328,18 +12334,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ec3ee535203a6a4885c7a2161628e4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickupableItems:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   interact: 101
+  player: {fileID: 298739059}
+  offset: {x: 0, y: 0, z: 0}
+  objHold: {fileID: 1224144245}
 --- !u!1001 &1224729802
 PrefabInstance:
   m_ObjectHideFlags: 0
