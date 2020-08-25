@@ -12,8 +12,6 @@ public class HoldItem : MonoBehaviour
 
     [SerializeField]
     private float distance;
-     
-    private bool objectInHand;
 
     void Update()
     {
@@ -24,7 +22,7 @@ public class HoldItem : MonoBehaviour
             if (Physics.Raycast(player.position + offset, transform.forward, out hit, distance))
             {
                 hit.transform.GetComponent<Interactables>();
-                hit.transform.SetParent(objHold.transform, true);
+                hit.transform.SetParent(objHold.transform, false);
             }
         }
     }

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
@@ -93,6 +91,6 @@ public class PlayerController : MonoBehaviour
 
     bool IsGrounded()
     {
-        return Physics.CheckSphere(transform.position, .1f, groundLayer);
+        return Physics.CheckSphere(transform.position, .1f, groundLayer);   
     }
 }
