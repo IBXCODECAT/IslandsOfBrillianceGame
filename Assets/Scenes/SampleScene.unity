@@ -12336,8 +12336,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interact: 101
   player: {fileID: 298739059}
-  offset: {x: 0, y: 0, z: 0}
+  offset: {x: 0, y: 1.01, z: 0}
   objHold: {fileID: 1224144245}
+  pickupable:
+    serializedVersion: 2
+    m_Bits: 512
+  distance: 100
 --- !u!1001 &1224729802
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14116,11 +14120,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Island Template 17
       objectReference: {fileID: 0}
-    - target: {fileID: 2194703029590903297, guid: 8df210d50b736b4439504b73f5ccf0ff,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2194703029590903310, guid: 8df210d50b736b4439504b73f5ccf0ff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14174,11 +14173,6 @@ PrefabInstance:
     - target: {fileID: 2194703029590903310, guid: 8df210d50b736b4439504b73f5ccf0ff,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2194703030032963538, guid: 8df210d50b736b4439504b73f5ccf0ff,
-        type: 3}
-      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -20671,7 +20665,7 @@ PrefabInstance:
     - target: {fileID: 291415011322810898, guid: ad4e4e85ad7cac94d9b6ec5114e4844b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 291415011322810900, guid: ad4e4e85ad7cac94d9b6ec5114e4844b,
         type: 3}

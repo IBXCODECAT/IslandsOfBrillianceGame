@@ -8,18 +8,20 @@ public class HoldItem : MonoBehaviour
     public Transform player;
     public Vector3 offset;
     public GameObject objHold;
-    
+    public LayerMask pickupable;
+
+    [SerializeField]
     private float distance;
-    private GameObject target;
+     
+    private bool objectInHand;
 
     void Update()
     {
-        RaycastHit hit;
-        Physics.Raycast(player.position + offset, transform.forward, out hit, Mathf.Infinity);
-
-        if (Vector3.Distance(hit.point, player.position) > distance)
+        if (Input.GetKeyDown(interact))
         {
-            if (hit.transform.gameObject.tag == "PickMeUpBro")
+            RaycastHit hit;
+
+            if (Physics.Raycast(player.position + offset, transform.forward, out hit, distance))
             {
                 hit.transform.GetComponent<Interactables>();
                 hit.transform.SetParent(objHold.transform, true);
