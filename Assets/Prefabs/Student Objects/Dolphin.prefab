@@ -72,6 +72,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92afc686494bb34458adba13725e3f51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  specRot: {x: 0, y: 0, z: 0}
+  specScale: {x: 1, y: 1, z: 1}
+  originalRot: {x: 0, y: 0, z: 0, w: 0}
+  originalScale: {x: 0, y: 0, z: 0}
 --- !u!1001 &5518269356782809992
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -158,6 +162,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 262
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127447757591984352, guid: b9564c8cbfd1a68419a82f0705548cbb,
+        type: 3}
+      propertyPath: specScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127447757591984352, guid: b9564c8cbfd1a68419a82f0705548cbb,
+        type: 3}
+      propertyPath: specScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127447757591984352, guid: b9564c8cbfd1a68419a82f0705548cbb,
+        type: 3}
+      propertyPath: specScale.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9564c8cbfd1a68419a82f0705548cbb, type: 3}

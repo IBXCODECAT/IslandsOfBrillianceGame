@@ -72,6 +72,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92afc686494bb34458adba13725e3f51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  specRot: {x: 0, y: 0, z: 0}
+  specScale: {x: 1, y: 1, z: 1}
+  originalRot: {x: 0, y: 0, z: 0, w: 0}
+  originalScale: {x: 0, y: 0, z: 0}
 --- !u!1001 &6852647286843021895
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -79,6 +83,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 219171028194661479}
     m_Modifications:
+    - target: {fileID: -3142816731281777932, guid: 7429e64ea7f0f89498cd178ea34ea264,
+        type: 3}
+      propertyPath: specScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3142816731281777932, guid: 7429e64ea7f0f89498cd178ea34ea264,
+        type: 3}
+      propertyPath: specScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3142816731281777932, guid: 7429e64ea7f0f89498cd178ea34ea264,
+        type: 3}
+      propertyPath: specScale.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1144091333945003248, guid: 7429e64ea7f0f89498cd178ea34ea264,
         type: 3}
       propertyPath: m_Name

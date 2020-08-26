@@ -10,6 +10,7 @@ public class HoldItem : MonoBehaviour
     public Transform player;
     public Vector3 offset;
     public GameObject objHold;
+    public Rigidbody rb;
 
     private Interactables interactables;
 
@@ -30,15 +31,39 @@ public class HoldItem : MonoBehaviour
                 if (interactables)
                 {
                     hit.transform.SetParent(objHold.transform, true);
+                    PhysicsToggle(true);
                     hit.transform.localPosition = Vector3.zero;
-                    hit.transform.localRotation = Quaternion.Euler(interactables.specRot);
+                    hit.transform.rotation = Quaternion.Euler(interactables.specRot);
                     hit.transform.localScale = interactables.specScale;
                 }
             }
         }
-        else if (Input.GetKeyDown(interact) && interactables != null)
+        else if (Input.GetKeyDown(pickUp) && interactables != null)
+        {
+            interactables.gameObject.transform.rotation = interactables.originalRot;
+            interactables.gameObject.transform.localScale = interactables.originalScale;
+            interactables.gameObject.transform.SetParent(null);
+            PhysicsToggle(false);
+            interactables = null;
+        }
+        
+        if (Input.GetKeyDown(interact) && interactables != null)
         {
             interactables.interact();
+        }
+    }
+
+    void PhysicsToggle(bool freeze)
+    {
+        if (freeze)
+        {
+            rb.isKinematic = true;
+            rb.useGravity = false;
+        }
+        else
+        {
+            rb.isKinematic = false;
+            rb.useGravity = true;
         }
     }
 }
