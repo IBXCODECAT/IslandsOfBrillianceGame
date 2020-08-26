@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5003382795850052477}
   - component: {fileID: 7517222939708848804}
   - component: {fileID: 2465222222817494292}
+  - component: {fileID: 5325308425371228875}
+  - component: {fileID: -8125486308678661970}
   m_Layer: 9
   m_Name: Ferris Wheel
   m_TagString: DestroyMe
@@ -59,6 +61,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 22.755682, y: 25.433418, z: 4.8889694}
   m_Center: {x: -0.0563612, y: 12.216709, z: 0.028180957}
+--- !u!114 &5325308425371228875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4957084351861942887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bf938fcc2e1f234b9154f271f91248c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-8125486308678661970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4957084351861942887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92afc686494bb34458adba13725e3f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3733842221705699457
 PrefabInstance:
   m_ObjectHideFlags: 0

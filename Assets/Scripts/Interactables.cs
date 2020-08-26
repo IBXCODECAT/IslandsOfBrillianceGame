@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class Interactables : MonoBehaviour
 {
+    public Vector3 specRot;
+    public Vector3 specScale;
+
+    protected Quaternion originalRot;
+    protected Vector3 originalScale;
 
     public virtual void interact()
     {
-        Debug.LogError("Put a function here you igit");
+        originalRot = transform.rotation;
+        originalScale = transform.localScale;
     }
-
 }

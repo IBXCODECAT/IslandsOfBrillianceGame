@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7829542178193865195}
   - component: {fileID: 3306402894081273210}
   - component: {fileID: 3347550031581259392}
+  - component: {fileID: 3276533375255360781}
   m_Layer: 9
   m_Name: Shrine
   m_TagString: DestroyMe
@@ -59,6 +60,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 14.709166, y: 8.609625, z: 17.729326}
   m_Center: {x: -0.014801979, y: 4.308175, z: -0.87347317}
+--- !u!114 &3276533375255360781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6994694720605341683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92afc686494bb34458adba13725e3f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8479588567903095938
 PrefabInstance:
   m_ObjectHideFlags: 0

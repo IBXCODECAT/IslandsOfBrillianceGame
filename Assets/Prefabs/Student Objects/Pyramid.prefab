@@ -89,6 +89,7 @@ GameObject:
   - component: {fileID: 825208538979864262}
   - component: {fileID: 6945277249324616497}
   - component: {fileID: 8588550282204259944}
+  - component: {fileID: -7079425945965777029}
   m_Layer: 9
   m_Name: Pyramid
   m_TagString: DestroyMe
@@ -137,3 +138,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6.6425276, y: 5.5612082, z: 5.9849167}
   m_Center: {x: 0, y: 2.7599347, z: -0.0067591667}
+--- !u!114 &-7079425945965777029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4407021908945894613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92afc686494bb34458adba13725e3f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

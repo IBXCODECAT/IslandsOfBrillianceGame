@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8717212487638365423}
   - component: {fileID: 4368789864988499610}
   - component: {fileID: 8515437475577709730}
+  - component: {fileID: 3968928466395392049}
   m_Layer: 9
   m_Name: Hut 2
   m_TagString: DestroyMe
@@ -59,6 +60,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.6603184, y: 4.6449203, z: 3.3668308}
   m_Center: {x: -0.0047340393, y: 2.2484894, z: -0.037869275}
+--- !u!114 &3968928466395392049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3515666724060400718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92afc686494bb34458adba13725e3f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6040159332916299039
 PrefabInstance:
   m_ObjectHideFlags: 0

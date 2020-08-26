@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 646569682571867660}
   - component: {fileID: 1790281786731544188}
   - component: {fileID: 8779985707169121434}
+  - component: {fileID: 4591322442506803737}
   m_Layer: 9
   m_Name: Crab
   m_TagString: DestroyMe
@@ -59,6 +60,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.1058028, y: 0.6332998, z: 1.2877594}
   m_Center: {x: 0.079493165, y: 0.32034612, z: -0.022522628}
+--- !u!114 &4591322442506803737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993952822107550680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92afc686494bb34458adba13725e3f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1521127409704153602
 PrefabInstance:
   m_ObjectHideFlags: 0

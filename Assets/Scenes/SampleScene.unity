@@ -1299,58 +1299,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &105348185 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4980293755952683646, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
-    type: 3}
-  m_PrefabInstance: {fileID: 1271384555}
-  m_PrefabAsset: {fileID: 0}
---- !u!33 &105348187
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 105348185}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &105348188
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 105348185}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 1ba0d4b495bede9449b9154618b1b6f0, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
 --- !u!1 &113888579
 GameObject:
   m_ObjectHideFlags: 0
@@ -12335,12 +12283,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: 101
+  pickUp: 102
   player: {fileID: 298739059}
   offset: {x: 0, y: 1.01, z: 0}
   objHold: {fileID: 1224144245}
-  pickupable:
-    serializedVersion: 2
-    m_Bits: 512
   distance: 100
 --- !u!1001 &1224729802
 PrefabInstance:

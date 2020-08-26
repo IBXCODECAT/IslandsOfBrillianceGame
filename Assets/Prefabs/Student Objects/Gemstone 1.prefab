@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5464428894727997703}
   - component: {fileID: 4092151808349101290}
   - component: {fileID: 1208622439245786138}
+  - component: {fileID: -7891346091224464827}
   m_Layer: 11
   m_Name: Gemstone 1
   m_TagString: DestroyMe
@@ -59,6 +60,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.6831369, y: 0.6245861, z: 0.6762486}
   m_Center: {x: 0.00000008940697, y: 0.311697, z: 0.003444165}
+--- !u!114 &-7891346091224464827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4398015225143271166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92afc686494bb34458adba13725e3f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5883460246660560296
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 166407268413715279}
   - component: {fileID: 2575231515966201987}
   - component: {fileID: 5824569924885607467}
+  - component: {fileID: 4931895774202756516}
   m_Layer: 9
   m_Name: Quarter
   m_TagString: DestroyMe
@@ -59,6 +60,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.1, y: 1.1, z: 0.08893485}
   m_Center: {x: 0, y: 0.55, z: 0.016597733}
+--- !u!114 &4931895774202756516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672273748746854530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92afc686494bb34458adba13725e3f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6754885957025655881
 PrefabInstance:
   m_ObjectHideFlags: 0
