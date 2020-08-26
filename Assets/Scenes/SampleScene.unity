@@ -23942,6 +23942,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3687360349034982801, guid: f1cacb1865a618f44bc38d6c66cad169,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8467950718515807960, guid: f1cacb1865a618f44bc38d6c66cad169,
         type: 3}
       propertyPath: m_IsActive
@@ -25712,6 +25717,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4040385890404285148, guid: b6d2436ffef08d44ab7a8181a68b837e,
+        type: 3}
+      propertyPath: PotatoAlpha
+      value: 
+      objectReference: {fileID: 6346033139985001019, guid: b6d2436ffef08d44ab7a8181a68b837e,
+        type: 3}
     - target: {fileID: -3390209810604795624, guid: b6d2436ffef08d44ab7a8181a68b837e,
         type: 3}
       propertyPath: m_Mass

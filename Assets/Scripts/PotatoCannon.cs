@@ -12,6 +12,8 @@ public class PotatoCannon : MonoBehaviour
 
     public bool cannonFire;
 
+
+
     private void Update()
     {
         if(Input.GetKey(KeyCode.Mouse0) && !cannonFire)
