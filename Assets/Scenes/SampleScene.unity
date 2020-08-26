@@ -3898,12 +3898,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1271384555}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &298739056 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7726281432159702721, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
-    type: 3}
-  m_PrefabInstance: {fileID: 1271384555}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &298739057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3918,8 +3912,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PotatoAlpha: {fileID: 6346033139985001019, guid: b6d2436ffef08d44ab7a8181a68b837e,
     type: 3}
-  potatoPosition: {fileID: 298739056}
-  potatoFire: 0.01
+  potatoPosition: {fileID: 1923024973}
+  potatoFire: 0.2
   potatoPower: 500
   cannonFire: 0
 --- !u!114 &298739059
@@ -12733,6 +12727,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7726281432159702722, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7726281432159702722, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 7726281432159702725, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
         type: 3}
       propertyPath: buildingOptions.Array.size
@@ -21346,6 +21350,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1918139292}
   m_CullTransparentMesh: 0
+--- !u!1 &1923024972
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1923024973}
+  m_Layer: 0
+  m_Name: PotatoSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1923024973
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923024972}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 411877938}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1946125699
 GameObject:
   m_ObjectHideFlags: 0

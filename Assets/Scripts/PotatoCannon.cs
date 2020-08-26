@@ -18,15 +18,16 @@ public class PotatoCannon : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.Mouse0) && !cannonFire)
         {
-            //cannonFire = true;
-              GameObject newPotatoAlpha = Instantiate(PotatoAlpha, potatoPosition.position, potatoPosition.rotation);
-        newPotatoAlpha.GetComponent<Rigidbody>().AddForce(transform.forward * potatoPower);//StartCoroutine(CannonFire());
+            cannonFire = true;
+              
+            StartCoroutine(CannonFire());
         }
     }
 
     IEnumerator CannonFire()
     {
-      
+        GameObject newPotatoAlpha = Instantiate(PotatoAlpha, potatoPosition.position, potatoPosition.rotation);
+        newPotatoAlpha.GetComponent<Rigidbody>().AddForce(transform.forward * potatoPower);
         yield return new WaitForSeconds(potatoFire);
         cannonFire = false; 
     }

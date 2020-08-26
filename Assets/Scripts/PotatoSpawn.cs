@@ -2,31 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class potatoSpawn : MonoBehaviour
+public class PotatoSpawn : MonoBehaviour
 {
-
     public GameObject PotatoAlpha;
-    public float despawn = 1;
-    
+
+    private void OnEnable()
+    {
+           Destroy(PotatoAlpha, 10);
+    }
+    //DestroyObjectDelayed()
+      
+
     // Start is called before the first frame update
     void Start()
     {
-          
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-      
-
+        
     }
-
-
-    void DestroyObjectDelayed()
-    {
-        Destroy(PotatoAlpha, 5);
-    }
-
-
-
 }
