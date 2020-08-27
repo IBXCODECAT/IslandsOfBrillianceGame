@@ -457,6 +457,26 @@ public class PlayerBuilding : MonoBehaviour
             Vector3 scale = currentSelectionPreview.transform.localScale;
 
             GameObject buildObject = Instantiate(buildingOptions[currentSelection], pos, rot);
+
+            Rigidbody rb = buildObject.GetComponent<Rigidbody>();
+
+            if(rb)
+            {
+                rb.isKinematic = false;
+                rb.useGravity = true;
+            }
+
+            Rigidbody[] rbs = buildObject.GetComponentsInChildren<Rigidbody>();
+
+            if(rbs.Length > 0)
+            {
+                foreach(Rigidbody _rb in rbs)
+                {
+                    _rb.isKinematic = false;
+                    _rb.useGravity = true;
+                }
+            }
+
             worldState.Add(buildObject, currentSelection);
             buildObject.transform.localScale = scale;
         }
