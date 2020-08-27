@@ -13,14 +13,18 @@ public class PotatoCannon : Interactables
 
     public override void interact()
     {
-        cannonFire = true;
-        StartCoroutine(CannonFire());
+        if (cannonFire == false)
+        {
+            cannonFire = true;
+            StartCoroutine(CannonFire());
+        }
+
     }
 
     IEnumerator CannonFire()
     {
-        GameObject newPotatoAlpha = Instantiate(PotatoAlpha, potatoPosition.position, potatoPosition.rotation);
-        newPotatoAlpha.GetComponent<Rigidbody>().AddForce(transform.forward * potatoPower);
+        GameObject newPotatoAlpha = Instantiate(PotatoAlpha, potatoPosition.position, transform.rotation);
+        newPotatoAlpha.GetComponent<Rigidbody>().AddForce(potatoPosition.transform.forward * potatoPower);
         yield return new WaitForSeconds(potatoFire);
         cannonFire = false;
     }
