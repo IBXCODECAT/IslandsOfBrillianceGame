@@ -141,6 +141,7 @@ MonoBehaviour:
   player: {fileID: 7726281432159702721}
   offset: {x: 0, y: 1.01, z: 0}
   objHold: {fileID: 900635160785827145}
+  rb: {fileID: 0}
   distance: 100
 --- !u!1 &3748586760775575322
 GameObject:
@@ -403,9 +404,11 @@ GameObject:
   - component: {fileID: 298739059}
   - component: {fileID: 298739057}
   - component: {fileID: 298739058}
-  m_Layer: 0
+  - component: {fileID: 3914697508056140171}
+  - component: {fileID: 6603560188301143191}
+  m_Layer: 11
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -745,3 +748,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7726281432159702722}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &3914697508056140171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7726281432159702722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9687e2176552e7148bcc07c9bf6f5e09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PotatoAlpha: {fileID: 6346033139985001019, guid: 6939068049f396f4bb9b8bc0263c6c6b,
+    type: 3}
+  potatoPosition: {fileID: 0}
+  potatoFire: 0.2
+  potatoPower: 500
+  cannonFire: 0
+--- !u!114 &6603560188301143191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7726281432159702722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acafaafe0a719f745982892918aeb89a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxFall: -25
+  spwnHeight: 75

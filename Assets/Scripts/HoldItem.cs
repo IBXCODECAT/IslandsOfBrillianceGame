@@ -31,6 +31,7 @@ public class HoldItem : MonoBehaviour
                 if (interactables)
                 {
                     hit.transform.SetParent(objHold.transform, true);
+                    rb = hit.transform.GetComponent<Rigidbody>();
                     PhysicsToggle(true);
                     hit.transform.localPosition = Vector3.zero;
                     hit.transform.rotation = Quaternion.Euler(interactables.specRot);
@@ -55,15 +56,22 @@ public class HoldItem : MonoBehaviour
 
     void PhysicsToggle(bool freeze)
     {
-        if (freeze)
+        if(rb)
         {
-            rb.isKinematic = true;
-            rb.useGravity = false;
+            if (freeze)
+            {
+                rb.isKinematic = true;
+                rb.useGravity = false;
+            }
+            else
+            {
+                rb.isKinematic = false;
+                rb.useGravity = true;
+            }
         }
         else
         {
-            rb.isKinematic = false;
-            rb.useGravity = true;
-        }
+            Debug.LogError("No Rigidbody Found!");
+        }    
     }
 }
