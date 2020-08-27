@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5910733568563856154}
   - component: {fileID: 5624444577050012401}
   - component: {fileID: 3155213976734688259}
+  - component: {fileID: -653378758388763491}
   m_Layer: 11
   m_Name: Bowling Pin
   m_TagString: DestroyMe
@@ -93,6 +94,18 @@ MonoBehaviour:
   specScale: {x: 1, y: 1, z: 1}
   originalRot: {x: 0, y: 0, z: 0, w: 0}
   originalScale: {x: 0, y: 0, z: 0}
+--- !u!114 &-653378758388763491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2221495010052855816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3330323e28f0e1a4ba9f9738e7cfe0a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &311164332314168848
 PrefabInstance:
   m_ObjectHideFlags: 0
