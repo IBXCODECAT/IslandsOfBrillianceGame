@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1923024972
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1923024973}
+  m_Layer: 0
+  m_Name: PotatoSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1923024973
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923024972}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7726281431472601231}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &642242901417804000
 GameObject:
   m_ObjectHideFlags: 0
@@ -35,7 +65,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 50, y: 50}
+  m_SizeDelta: {x: 5, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3134922392832094110
 CanvasRenderer:
@@ -58,12 +88,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -273,6 +303,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5612450352276945484}
+  - {fileID: 1923024973}
   m_Father: {fileID: 7726281432159702721}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -530,6 +561,7 @@ MonoBehaviour:
   - {fileID: 4957084351861942887, guid: 2d0e8ecd8d56c454fa6ea5909091457c, type: 3}
   - {fileID: 672273748746854530, guid: cf05bed97a3299145889fb150ab81cf7, type: 3}
   - {fileID: 1977611408854200832, guid: 466f44baf0fa27c41aefdc769823d850, type: 3}
+  - {fileID: 6306949232138507915, guid: 30d3103ae55fb3f428462b6644626279, type: 3}
   buildingIcons:
   - {fileID: 21300000, guid: 6a681bfacd483934c83e82afd9199a43, type: 3}
   - {fileID: 21300000, guid: 69249cb056b28994d98f6b3a45373242, type: 3}
@@ -566,6 +598,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b57043dead592db42ab9bfe662eed994, type: 3}
   - {fileID: 21300000, guid: ab593c0422d373a459299126963bd38f, type: 3}
   - {fileID: 21300000, guid: 41045dc2f8200ec4f899207f19b195de, type: 3}
+  - {fileID: 21300000, guid: 53d9d46e3ccb3ee4cb397a80f6dcc0c7, type: 3}
   - {fileID: 21300000, guid: 53d9d46e3ccb3ee4cb397a80f6dcc0c7, type: 3}
   - {fileID: 21300000, guid: 53d9d46e3ccb3ee4cb397a80f6dcc0c7, type: 3}
   buildLimit: 250
@@ -760,9 +793,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9687e2176552e7148bcc07c9bf6f5e09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  specRot: {x: 0, y: 0, z: 0}
+  specScale: {x: 0, y: 0, z: 0}
+  originalRot: {x: 0, y: 0, z: 0, w: 0}
+  originalScale: {x: 0, y: 0, z: 0}
   PotatoAlpha: {fileID: 6346033139985001019, guid: 6939068049f396f4bb9b8bc0263c6c6b,
     type: 3}
-  potatoPosition: {fileID: 0}
+  potatoPosition: {fileID: 1923024973}
   potatoFire: 0.2
   potatoPower: 500
   cannonFire: 0

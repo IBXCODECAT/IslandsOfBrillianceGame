@@ -2,26 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PotatoCannon : MonoBehaviour
+public class PotatoCannon : Interactables
 {
     public GameObject PotatoAlpha;
     public Transform potatoPosition;
     public float potatoFire;
 
     public float potatoPower;
+    private bool cannonFire;
 
-    public bool cannonFire;
-
-
-
-    private void Update()
+    public override void interact()
     {
-        if(Input.GetKey(KeyCode.Mouse0) && !cannonFire)
-        {
-            cannonFire = true;
-              
-            StartCoroutine(CannonFire());
-        }
+        cannonFire = true;
+        StartCoroutine(CannonFire());
     }
 
     IEnumerator CannonFire()
@@ -29,6 +22,6 @@ public class PotatoCannon : MonoBehaviour
         GameObject newPotatoAlpha = Instantiate(PotatoAlpha, potatoPosition.position, potatoPosition.rotation);
         newPotatoAlpha.GetComponent<Rigidbody>().AddForce(transform.forward * potatoPower);
         yield return new WaitForSeconds(potatoFire);
-        cannonFire = false; 
+        cannonFire = false;
     }
 }

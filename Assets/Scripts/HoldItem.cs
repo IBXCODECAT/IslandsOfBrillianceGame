@@ -48,7 +48,7 @@ public class HoldItem : MonoBehaviour
             interactables = null;
         }
         
-        if (Input.GetKeyDown(interact) && interactables != null)
+        if (Input.GetKey(interact) && interactables != null)
         {
             interactables.interact();
         }
