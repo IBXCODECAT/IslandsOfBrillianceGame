@@ -801,8 +801,7 @@ MonoBehaviour:
     type: 3}
   potatoPosition: {fileID: 1923024973}
   potatoFire: 0.2
-  potatoPower: 500
-  cannonFire: 0
+  potatoPower: 100
 --- !u!114 &6603560188301143191
 MonoBehaviour:
   m_ObjectHideFlags: 0
