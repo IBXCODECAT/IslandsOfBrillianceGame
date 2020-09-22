@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 123706934850223728}
   m_Layer: 9
   m_Name: Ferrari Surfy Boi
-  m_TagString: GameController
+  m_TagString: DestroyMe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

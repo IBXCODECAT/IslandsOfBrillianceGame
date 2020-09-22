@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -3142816731281777932}
   m_Layer: 0
   m_Name: Royal Beach Bench
-  m_TagString: Untagged
+  m_TagString: DestroyMe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
