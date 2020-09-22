@@ -4724,9 +4724,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4dd7aa48100338408d3383c4ba9d735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  power: 1000
-  radius: 10
-  rb: {fileID: 391738370}
 --- !u!54 &391738370
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12589,6 +12586,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1224144248, guid: 7b7a9ed307d94fb4abce2fbd39823c71, type: 3}
+      propertyPath: interactableLayer.m_Bits
+      value: 35328
+      objectReference: {fileID: 0}
     - target: {fileID: 3526617003456709882, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -12659,6 +12660,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7726281432159702722, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 7726281432159702725, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
         type: 3}
       propertyPath: constructionModeSelection
@@ -12709,6 +12715,11 @@ PrefabInstance:
       propertyPath: instructions
       value: 
       objectReference: {fileID: 6727553501679027743}
+    - target: {fileID: 7726281432159702725, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
+        type: 3}
+      propertyPath: environmentLayer.m_Bits
+      value: 33536
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b7a9ed307d94fb4abce2fbd39823c71, type: 3}
 --- !u!114 &1271384556 stripped
@@ -22335,6 +22346,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475446328849085696, guid: f1cacb1865a618f44bc38d6c66cad169,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8467950718515807960, guid: f1cacb1865a618f44bc38d6c66cad169,
         type: 3}

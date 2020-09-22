@@ -11,6 +11,7 @@ public class HoldItem : MonoBehaviour
     public Vector3 offset;
     public GameObject objHold;
     public Rigidbody rb;
+    public LayerMask interactableLayer;
 
     private Interactables interactables;
 
@@ -23,19 +24,19 @@ public class HoldItem : MonoBehaviour
         {
             RaycastHit hit;
 
-            if (Physics.Raycast(player.position + offset, transform.forward, out hit, distance))
+            if (Physics.Raycast(player.position + offset, transform.forward, out hit, distance, interactableLayer))
             {
 
                 interactables = hit.transform.gameObject.GetComponent<Interactables>();
 
                 if (interactables)
                 {
-                    hit.transform.SetParent(objHold.transform, true);
-                    rb = hit.transform.GetComponent<Rigidbody>();
+                    interactables.transform.SetParent(objHold.transform, true);
+                    rb = interactables.transform.GetComponent<Rigidbody>();
                     PhysicsToggle(true);
-                    hit.transform.localPosition = Vector3.zero;
-                    hit.transform.rotation = Quaternion.Euler(interactables.specRot);
-                    hit.transform.localScale = interactables.specScale;
+                    interactables.transform.localPosition = Vector3.zero;
+                    interactables.transform.rotation = Quaternion.Euler(interactables.specRot);
+                    interactables.transform.localScale = interactables.specScale;
                 }
             }
         }
