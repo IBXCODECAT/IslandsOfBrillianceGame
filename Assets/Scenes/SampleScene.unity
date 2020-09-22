@@ -4724,9 +4724,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4dd7aa48100338408d3383c4ba9d735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  power: 1000
-  radius: 10
-  rb: {fileID: 391738370}
 --- !u!54 &391738370
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19124,7 +19121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 134676, guid: 6488b6e6bbe8a9c4585b531a71d8211c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 440718, guid: 6488b6e6bbe8a9c4585b531a71d8211c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19132,7 +19129,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 440718, guid: 6488b6e6bbe8a9c4585b531a71d8211c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 440718, guid: 6488b6e6bbe8a9c4585b531a71d8211c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -22332,6 +22329,11 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3687360349034982801, guid: f1cacb1865a618f44bc38d6c66cad169,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475446328849085696, guid: f1cacb1865a618f44bc38d6c66cad169,
         type: 3}
       propertyPath: m_IsActive
       value: 0
