@@ -8,6 +8,8 @@ public class FalloutCatcher : MonoBehaviour
     public float spwnHeight = 75;
     private PlayerController PlyrCtrlDisable;
 
+    public ThrowError showError;
+
     // Update is called once per frame
     private void Start()
     {
@@ -18,7 +20,8 @@ public class FalloutCatcher : MonoBehaviour
     {
         if (transform.position.y < maxFall)
         {
-            Debug.Log("fell to far reset");
+            showError.Error(3, "Player's elevation is " + transform.position.y + ". The player's elevation should be clamped to " + maxFall);
+
             PlyrCtrlDisable.enabled = false;
             transform.position = new Vector3(0, spwnHeight, 0);
             PlyrCtrlDisable.enabled = true;
