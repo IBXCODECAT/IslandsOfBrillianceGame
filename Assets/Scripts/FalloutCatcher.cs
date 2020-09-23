@@ -20,7 +20,8 @@ public class FalloutCatcher : MonoBehaviour
     {
         if (transform.position.y < maxFall)
         {
-            showError.Error(3, "Player's elevation is " + transform.position.y + ". The player's elevation should be clamped to " + maxFall);
+            showError.Error(1, "Player's elevation is " + transform.position.y + ". The player's elevation should be clamped to " + maxFall);
+            showError.Error(2, "Player's elevation is " + transform.position.y + ". The player's elevation should be clamped to " + maxFall);
 
             PlyrCtrlDisable.enabled = false;
             transform.position = new Vector3(0, spwnHeight, 0);
