@@ -10017,8 +10017,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 941657590}
   m_CullTransparentMesh: 0
-<<<<<<< Updated upstream
-=======
 --- !u!1 &956890418
 GameObject:
   m_ObjectHideFlags: 0
@@ -10141,7 +10139,6 @@ Transform:
   m_Father: {fileID: 1542117031740863506}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes
 --- !u!1 &999989405
 GameObject:
   m_ObjectHideFlags: 0
