@@ -4,24 +4,17 @@ using UnityEngine;
 
 public class FalloutCatcher : MonoBehaviour
 {
-    public float maxFall = -25;
     public float spwnHeight = 75;
-    private PlayerController PlyrCtrlDisable;
 
     // Update is called once per frame
-    private void Start()
+    void OnTriggerEnter(Collider collider)
     {
-        PlyrCtrlDisable = GetComponent<PlayerController>();
-    }
-
-    void Update()
-    {
-        if (transform.position.y < maxFall)
+        if (collider.tag == "Player")
         {
             Debug.Log("fell to far reset");
-            PlyrCtrlDisable.enabled = false;
-            transform.position = new Vector3(0, spwnHeight, 0);
-            PlyrCtrlDisable.enabled = true;
-        } 
+            // PlayerController.instance.enabled = false; //
+            PlayerController.instance.transform.position = new Vector3(0, spwnHeight, 0);
+            // PlayerController.instance.enabled = true; //
+        }
     }
 }

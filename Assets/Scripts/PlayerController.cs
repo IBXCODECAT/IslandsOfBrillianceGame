@@ -2,6 +2,7 @@
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController instance;
     public float speed = 5;
     public float rotationSpeed = 1;
     public float gravity = 35;
@@ -18,6 +19,10 @@ public class PlayerController : MonoBehaviour
 
     Camera cam;
     CharacterController cc;
+    void Awake()
+    {
+        instance = this;
+    }
 
     private void Start()
     {
