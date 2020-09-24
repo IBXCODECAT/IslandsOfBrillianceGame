@@ -14360,6 +14360,7 @@ GameObject:
   - component: {fileID: 3085491017944507136}
   - component: {fileID: 2226585524152156287}
   - component: {fileID: -6428407417796151721}
+  - component: {fileID: 9123673553208736244}
   m_Layer: 9
   m_Name: Fire Pit
   m_TagString: DestroyMe
@@ -14393,8 +14394,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.8782833, y: 0.7565663, z: 0.9299207}
-  m_Center: {x: -0.0018441975, y: 0.3717805, z: 0.009220958}
+  m_Size: {x: 0.8782833, y: 0.20219839, z: 0.9299207}
+  m_Center: {x: -0.0018441975, y: 0.094596565, z: 0.009220958}
 --- !u!65 &2226585524152156287
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14424,6 +14425,19 @@ MonoBehaviour:
   specScale: {x: 1, y: 1, z: 1}
   originalRot: {x: 0, y: 0, z: 0, w: 0}
   originalScale: {x: 0, y: 0, z: 0}
+--- !u!65 &9123673553208736244
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9084170921711468526}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.505253, y: 0.56129134, z: 0.48526272}
+  m_Center: {x: -0.027929276, y: 0.46263808, z: 0.05385138}
 --- !u!1001 &649070454059849995
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2707524296116293730}
-  - component: {fileID: 6236566580620821903}
   - component: {fileID: 9116237359659840895}
   - component: {fileID: -9120852249061763946}
   m_Layer: 9
@@ -34,19 +33,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &6236566580620821903
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6002842744610375579}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0028089, y: 0.70595694, z: 0.7053097}
-  m_Center: {x: -0.0029060245, y: 0.35238242, z: -0.0023680627}
 --- !u!65 &9116237359659840895
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -76,6 +62,20 @@ MonoBehaviour:
   specScale: {x: 1, y: 1, z: 1}
   originalRot: {x: 0, y: 0, z: 0, w: 0}
   originalScale: {x: 0, y: 0, z: 0}
+--- !u!64 &4606828571229783280
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6642140035114303864}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 3349657277884010633, guid: 4cf86c3f8c26145499ffc0388e9bed0d, type: 3}
 --- !u!1001 &6749513573759529108
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -160,6 +160,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b326715198f5ce4e85f38a70c2f350e, type: 3}
+--- !u!1 &6642140035114303864 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 109926965602857452, guid: 5b326715198f5ce4e85f38a70c2f350e,
+    type: 3}
+  m_PrefabInstance: {fileID: 6749513573759529108}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7671537764180259691 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4025602506928702463, guid: 5b326715198f5ce4e85f38a70c2f350e,

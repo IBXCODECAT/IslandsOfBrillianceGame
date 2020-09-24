@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2919091183711725294}
   - component: {fileID: 4733975675026545096}
-  - component: {fileID: 2038304961655354266}
   - component: {fileID: 3851724842006343287}
   m_Layer: 9
   m_Name: Dinosaur
@@ -47,19 +46,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.2559059, y: 4.2671123, z: 4.8204136}
   m_Center: {x: -0.021956563, y: 2.037554, z: 0.2942152}
---- !u!65 &2038304961655354266
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7175299058122691912}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.2559059, y: 4.2671123, z: 4.8204136}
-  m_Center: {x: -0.021956563, y: 2.037554, z: 0.2942152}
 --- !u!114 &3851724842006343287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76,6 +62,20 @@ MonoBehaviour:
   specScale: {x: 0, y: 0, z: 0}
   originalRot: {x: 0, y: 0, z: 0, w: 0}
   originalScale: {x: 0, y: 0, z: 0}
+--- !u!64 &3378315112878086144
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8424353774167526388}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 3803587215082514259, guid: 4329a012a73631d4bb54d545dea445d3, type: 3}
 --- !u!1001 &7019608391729446045
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -203,6 +203,12 @@ PrefabInstance:
 --- !u!4 &5336566118658544961 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3127154247572220380, guid: 3b429ac4fbaaf6a4b8b9d72f3386d7b2,
+    type: 3}
+  m_PrefabInstance: {fileID: 7019608391729446045}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8424353774167526388 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1550357280717305705, guid: 3b429ac4fbaaf6a4b8b9d72f3386d7b2,
     type: 3}
   m_PrefabInstance: {fileID: 7019608391729446045}
   m_PrefabAsset: {fileID: 0}
