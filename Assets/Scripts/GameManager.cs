@@ -4,6 +4,7 @@ using System.ComponentModel;
 using UnityEngine;
 using UnityEngine.Audio;
 using System.Linq;
+using System.Diagnostics;
 
 public class GameManager : MonoBehaviour
 {
@@ -24,14 +25,15 @@ public class GameManager : MonoBehaviour
 
         island = PlayerPrefs.GetInt("IslandCount");
         islands[island].SetActive(true);
-        RespawnPlayer(PlayerPrefs.GetInt("IslandCount"));
+        RespawnPlayer();
 
         StartCoroutine(LoadVolumeSettings());
     }
 
-    public void RespawnPlayer(int i) 
+    public void RespawnPlayer() 
     {
-        player.transform.position = new Vector3(spawnpoint[i].position.x, spawnpoint[i].position.y, spawnpoint[i].position.z);
+        player.transform.position = new Vector3(spawnpoint[island].position.x, spawnpoint[island].position.y, spawnpoint[island].position.z);
+        UnityEngine.Debug.Log("Respawning Player " + player); 
     }
 
     private IEnumerator LoadVolumeSettings()

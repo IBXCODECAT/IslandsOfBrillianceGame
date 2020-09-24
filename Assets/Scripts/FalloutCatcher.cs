@@ -15,7 +15,7 @@ public class FalloutCatcher : MonoBehaviour
         {
             Debug.Log("fell to far reset");
             // PlayerController.instance.enabled = false; //
-            PlayerController.instance.transform.position = new Vector3(0, spwnHeight, 0);
+            GameManager.instance.RespawnPlayer();
             // PlayerController.instance.enabled = true; //
         }
     }
