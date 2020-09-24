@@ -9,7 +9,9 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
+    public GameObject player;
     public List<GameObject> islands;
+    public List<Transform> spawnpoint;
     public string[] VolumeList;
     public string[] PlayerPrefList;
     public AudioMixer Mixer;
@@ -22,8 +24,14 @@ public class GameManager : MonoBehaviour
 
         island = PlayerPrefs.GetInt("IslandCount");
         islands[island].SetActive(true);
+        RespawnPlayer(PlayerPrefs.GetInt("IslandCount"));
 
         StartCoroutine(LoadVolumeSettings());
+    }
+
+    public void RespawnPlayer(int i) 
+    {
+        player.transform.position = new Vector3(spawnpoint[i].position.x, spawnpoint[i].position.y, spawnpoint[i].position.z);
     }
 
     private IEnumerator LoadVolumeSettings()
