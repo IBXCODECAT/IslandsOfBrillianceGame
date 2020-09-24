@@ -6,6 +6,8 @@ public class FalloutCatcher : MonoBehaviour
 {
     public float spwnHeight = 75;
 
+    public ThrowError showError;
+
     // Update is called once per frame
     void OnTriggerEnter(Collider collider)
     {
