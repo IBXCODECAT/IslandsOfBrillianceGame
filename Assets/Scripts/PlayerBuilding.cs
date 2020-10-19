@@ -42,6 +42,7 @@ public class PlayerBuilding : MonoBehaviour
     public Dictionary<GameObject, int> worldState = new Dictionary<GameObject, int>();
 
     bool useNormal = true;
+    bool localSpace = false;
 
     int clones;
     Vector3 previousPos;
@@ -100,7 +101,7 @@ public class PlayerBuilding : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            useNormal = !useNormal;
+            localSpace = !localSpace;
         }
 
         if (buildMode)
@@ -375,19 +376,29 @@ public class PlayerBuilding : MonoBehaviour
     void RotateXMode()
     {
         float mouseWheelInput = Input.mouseScrollDelta.y;
-        currentSelectionPreview.transform.Rotate(mouseWheelInput * rotSpeed * Time.deltaTime, 0, 0);
+
+        if(!localSpace)
+            currentSelectionPreview.transform.Rotate(mouseWheelInput * rotSpeed * Time.deltaTime, 0, 0, Space.World);
+        else
+            currentSelectionPreview.transform.Rotate(mouseWheelInput * rotSpeed * Time.deltaTime, 0, 0, Space.Self);
     }
 
     void RotateYMode()
     {
         float mouseWheelInput = Input.mouseScrollDelta.y;
-        currentSelectionPreview.transform.Rotate(0, mouseWheelInput * rotSpeed * Time.deltaTime, 0);
+        if (!localSpace)
+            currentSelectionPreview.transform.Rotate(0, mouseWheelInput * rotSpeed * Time.deltaTime, 0, Space.World);
+        else
+            currentSelectionPreview.transform.Rotate(0, mouseWheelInput * rotSpeed * Time.deltaTime, 0, Space.Self);
     }
 
     void RotateZMode()
     {
         float mouseWheelInput = Input.mouseScrollDelta.y;
-        currentSelectionPreview.transform.Rotate(0, 0, mouseWheelInput * rotSpeed * Time.deltaTime);
+        if (!localSpace)
+            currentSelectionPreview.transform.Rotate(0, 0, mouseWheelInput * rotSpeed * Time.deltaTime, Space.World);
+        else
+            currentSelectionPreview.transform.Rotate(0, 0, mouseWheelInput * rotSpeed * Time.deltaTime, Space.Self);
     }
 
     void DestroyMode()

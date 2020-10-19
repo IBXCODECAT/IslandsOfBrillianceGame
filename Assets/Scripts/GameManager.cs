@@ -24,14 +24,14 @@ public class GameManager : MonoBehaviour
 
         island = PlayerPrefs.GetInt("IslandCount");
         islands[island].SetActive(true);
-        RespawnPlayer(PlayerPrefs.GetInt("IslandCount"));
+        RespawnPlayer();
 
         StartCoroutine(LoadVolumeSettings());
     }
 
-    public void RespawnPlayer(int i) 
+    public void RespawnPlayer() 
     {
-        player.transform.position = new Vector3(spawnpoint[i].position.x, spawnpoint[i].position.y, spawnpoint[i].position.z);
+        player.transform.position = spawnpoint[island].position;
     }
 
     private IEnumerator LoadVolumeSettings()
