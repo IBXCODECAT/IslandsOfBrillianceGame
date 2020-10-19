@@ -5,18 +5,11 @@ using UnityEngine;
 public class FalloutCatcher : MonoBehaviour
 {
     public float spwnHeight = 75;
-
     public ThrowError showError;
 
-    // Update is called once per frame
-    void OnTriggerEnter(Collider collider)
+    private void Update()
     {
-        if (collider.tag == "Player")
-        {
-            Debug.Log("fell to far reset");
-            // PlayerController.instance.enabled = false; //
-            PlayerController.instance.transform.position = new Vector3(0, spwnHeight, 0);
-            // PlayerController.instance.enabled = true; //
-        }
+        if (transform.position.y < -50)
+            GameManager.instance.RespawnPlayer();
     }
 }
