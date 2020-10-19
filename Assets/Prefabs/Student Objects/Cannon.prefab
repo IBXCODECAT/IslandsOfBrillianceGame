@@ -125,7 +125,7 @@ MonoBehaviour:
     type: 3}
   potatoPosition: {fileID: 8880546559514482463}
   potatoFire: 1
-  potatoPower: 1000
+  potatoPower: 25000
 --- !u!64 &7783758334278987321
 MeshCollider:
   m_ObjectHideFlags: 0

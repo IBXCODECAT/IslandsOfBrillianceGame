@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2764819706054872467}
   - component: {fileID: 5583355915134130064}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bowling Set
   m_TagString: DestroyMe
   m_Icon: {fileID: 0}

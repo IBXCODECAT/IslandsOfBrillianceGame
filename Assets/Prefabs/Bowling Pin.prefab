@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5624444577050012401}
   - component: {fileID: 3155213976734688259}
   - component: {fileID: -653378758388763491}
-  m_Layer: 11
+  m_Layer: 9
   m_Name: Bowling Pin
   m_TagString: DestroyMe
   m_Icon: {fileID: 0}

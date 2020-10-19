@@ -36,6 +36,7 @@ public class HoldItem : MonoBehaviour
                     PhysicsToggle(true);
                     interactables.transform.localPosition = Vector3.zero;
                     interactables.transform.rotation = Quaternion.Euler(interactables.specRot);
+                    interactables.originalScale = interactables.transform.localScale;
                     interactables.transform.localScale = interactables.specScale;
                 }
             }
