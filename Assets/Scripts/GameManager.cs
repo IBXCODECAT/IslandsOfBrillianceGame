@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     public AudioMixer Mixer;
 
     int island;
+    PlayerController playerController;
 
     private void Awake()
     {
@@ -28,11 +29,14 @@ public class GameManager : MonoBehaviour
         RespawnPlayer();
 
         StartCoroutine(LoadVolumeSettings());
+        playerController = player.GetComponent<PlayerController>();
     }
 
     public void RespawnPlayer() 
     {
+        playerController.enabled = false;
         player.transform.position = new Vector3(spawnpoint[island].position.x, spawnpoint[island].position.y, spawnpoint[island].position.z);
+        playerController.enabled = true;
         UnityEngine.Debug.Log("Respawning Player " + player); 
     }
 
