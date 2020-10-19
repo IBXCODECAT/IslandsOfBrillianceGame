@@ -13920,7 +13920,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c99786e2cbb3c504fb01f069167d2b9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 391738359}
   islands:
   - {fileID: 1966172014}
   - {fileID: 2035311993}
