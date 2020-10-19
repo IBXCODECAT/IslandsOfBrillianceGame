@@ -12918,6 +12918,26 @@ PrefabInstance:
       propertyPath: showError
       value: 
       objectReference: {fileID: 1951364580}
+    - target: {fileID: 7726281431472601224, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
+        type: 3}
+      propertyPath: m_ClearFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7726281431472601224, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7726281431472601224, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7726281431472601224, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7726281432159702721, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13038,6 +13058,16 @@ PrefabInstance:
       propertyPath: environmentLayer.m_Bits
       value: 33536
       objectReference: {fileID: 0}
+    - target: {fileID: 7726281432159702726, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
+        type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7726281432159702726, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
+        type: 3}
+      propertyPath: jumpForce
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b7a9ed307d94fb4abce2fbd39823c71, type: 3}
 --- !u!114 &1271384556 stripped
@@ -13046,7 +13076,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1271384555}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1271384558}
+  m_GameObject: {fileID: 391738359}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c16ed3bc45c10fb4a9d3c3e2ee1e3329, type: 3}
@@ -13058,18 +13088,12 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1271384555}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1271384558}
+  m_GameObject: {fileID: 391738359}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a306c165bc446534096c3ae1f87240e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1271384558 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7726281432159702722, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
-    type: 3}
-  m_PrefabInstance: {fileID: 1271384555}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1301433063
 GameObject:
   m_ObjectHideFlags: 0
@@ -13839,7 +13863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c99786e2cbb3c504fb01f069167d2b9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1271384558}
+  player: {fileID: 0}
   islands:
   - {fileID: 1966172014}
   - {fileID: 2035311993}
@@ -23278,7 +23302,17 @@ PrefabInstance:
     - target: {fileID: 7475446328849085696, guid: f1cacb1865a618f44bc38d6c66cad169,
         type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937125479317161548, guid: f1cacb1865a618f44bc38d6c66cad169,
+        type: 3}
+      propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8261248704994786852, guid: f1cacb1865a618f44bc38d6c66cad169,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8467950718515807960, guid: f1cacb1865a618f44bc38d6c66cad169,
         type: 3}
