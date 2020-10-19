@@ -166,7 +166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1763200227802082823}
   - component: {fileID: 8263270543139341516}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'cannon '
   m_TagString: DestroyMe
   m_Icon: {fileID: 0}

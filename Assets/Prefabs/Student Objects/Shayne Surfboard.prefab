@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 2835716972309625343}
   - component: {fileID: 6310446480159443858}
   - component: {fileID: -6367158030519781586}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shayne Surfboard
   m_TagString: DestroyMe
   m_Icon: {fileID: 0}

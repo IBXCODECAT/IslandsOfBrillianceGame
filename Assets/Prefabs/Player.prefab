@@ -172,6 +172,9 @@ MonoBehaviour:
   offset: {x: 0, y: 1.01, z: 0}
   objHold: {fileID: 900635160785827145}
   rb: {fileID: 0}
+  interactableLayer:
+    serializedVersion: 2
+    m_Bits: 0
   distance: 100
 --- !u!1 &3748586760775575322
 GameObject:
@@ -609,7 +612,7 @@ MonoBehaviour:
   rotateSpeed: 10
   environmentLayer:
     serializedVersion: 2
-    m_Bits: 768
+    m_Bits: 33536
   renderer: {fileID: 7726281432159702724}
   smoothSpeed: 75
   maxClones: 0

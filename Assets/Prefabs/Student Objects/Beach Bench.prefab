@@ -103,6 +103,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Royal Beach Bench
       objectReference: {fileID: 0}
+    - target: {fileID: 1144091333945003248, guid: 7429e64ea7f0f89498cd178ea34ea264,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4160192292804886243, guid: 7429e64ea7f0f89498cd178ea34ea264,
         type: 3}
       propertyPath: m_LocalPosition.x

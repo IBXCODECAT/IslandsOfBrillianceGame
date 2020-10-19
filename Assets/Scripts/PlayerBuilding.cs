@@ -441,6 +441,7 @@ public class PlayerBuilding : MonoBehaviour
         Ray ray = new Ray(cam.transform.position, cam.transform.forward);
         if (Physics.Raycast(ray, out hit, rayDistance, environmentLayer))
         {
+            Debug.Log("Hit: " + hit.transform.name);
             renderPos1 = transform.position;
             renderPos2 = hit.point;
 

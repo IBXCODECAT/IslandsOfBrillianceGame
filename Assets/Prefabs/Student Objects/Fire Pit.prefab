@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1807613384707767757}
   - component: {fileID: 1807613384721868659}
   - component: {fileID: 1807613384721907199}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: SmallFiresSparksParticleSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4881,7 +4881,7 @@ GameObject:
   - component: {fileID: 1807613384707798273}
   - component: {fileID: 1807613384721024003}
   - component: {fileID: 1807613384721943639}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: SmallFiresSmoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9516,7 +9516,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1807613384707798969}
   - component: {fileID: 1807613384697274085}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: SmallFiresLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9606,7 +9606,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1807613384707777689}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: SmallFires
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9642,7 +9642,7 @@ GameObject:
   - component: {fileID: 1807613384707743435}
   - component: {fileID: 1807613384721899191}
   - component: {fileID: 1807613384721866321}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: SmallFiresParticleSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}

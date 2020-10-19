@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4228257586964632815}
   - component: {fileID: 7551560874480484328}
   - component: {fileID: 4689565662579181835}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,7 +168,7 @@ GameObject:
   - component: {fileID: 3688501902817088413}
   - component: {fileID: 6822853409942515409}
   - component: {fileID: 5694483471102540471}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -246,7 +246,7 @@ GameObject:
   - component: {fileID: 8369742930039096863}
   - component: {fileID: 2273514872759515245}
   - component: {fileID: 1879692214542216244}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Windows
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -324,7 +324,7 @@ GameObject:
   - component: {fileID: 4963067872432240435}
   - component: {fileID: 2297755368954871788}
   - component: {fileID: 5618046614360957433}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}

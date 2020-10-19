@@ -72,7 +72,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3210510753492064253}
   - component: {fileID: -7169830390256642101}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Surfboard 4 Square
   m_TagString: DestroyMe
   m_Icon: {fileID: 0}
