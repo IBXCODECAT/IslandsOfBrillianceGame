@@ -12965,10 +12965,24 @@ PrefabInstance:
       propertyPath: interactableLayer.m_Bits
       value: 35328
       objectReference: {fileID: 0}
+    - target: {fileID: 1690770255, guid: 7b7a9ed307d94fb4abce2fbd39823c71, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 824084367597715491, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
+        type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3526617003456709882, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3748586760775575322, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6603560188301143191, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
         type: 3}

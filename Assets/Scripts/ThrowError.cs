@@ -27,13 +27,15 @@ public class ThrowError : MonoBehaviour
                 errorNotification.text += "\n -";
                 break;
         }
-
     }
 
     public void Error(int error, string errorInfo)
     {
         text.text = "";
 
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        
         switch(error)
         {
             case 0:
