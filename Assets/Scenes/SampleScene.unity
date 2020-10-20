@@ -13062,6 +13062,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7726281432159702725, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
         type: 3}
+      propertyPath: buildingOptions.Array.size
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 7726281432159702725, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
+        type: 3}
+      propertyPath: buildingIcons.Array.size
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 7726281432159702725, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
+        type: 3}
       propertyPath: constructionModeSelection
       value: 
       objectReference: {fileID: 6727553502758738762}
@@ -13115,6 +13125,18 @@ PrefabInstance:
       propertyPath: environmentLayer.m_Bits
       value: 33536
       objectReference: {fileID: 0}
+    - target: {fileID: 7726281432159702725, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
+        type: 3}
+      propertyPath: buildingOptions.Array.data[38]
+      value: 
+      objectReference: {fileID: 6178280629734505565, guid: 97a443ee436c9314b9ee35200713a975,
+        type: 3}
+    - target: {fileID: 7726281432159702725, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
+        type: 3}
+      propertyPath: buildingIcons.Array.data[38]
+      value: 
+      objectReference: {fileID: 21300000, guid: 53d9d46e3ccb3ee4cb397a80f6dcc0c7,
+        type: 3}
     - target: {fileID: 7726281432159702726, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
         type: 3}
       propertyPath: speed
