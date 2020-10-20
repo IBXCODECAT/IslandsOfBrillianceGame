@@ -13062,6 +13062,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7726281432159702725, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
         type: 3}
+      propertyPath: buildingOptions.Array.size
+      value: 41
+      objectReference: {fileID: 0}
+    - target: {fileID: 7726281432159702725, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
+        type: 3}
+      propertyPath: buildingIcons.Array.size
+      value: 41
+      objectReference: {fileID: 0}
+    - target: {fileID: 7726281432159702725, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
+        type: 3}
       propertyPath: constructionModeSelection
       value: 
       objectReference: {fileID: 6727553502758738762}
@@ -13115,6 +13125,42 @@ PrefabInstance:
       propertyPath: environmentLayer.m_Bits
       value: 33536
       objectReference: {fileID: 0}
+    - target: {fileID: 7726281432159702725, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
+        type: 3}
+      propertyPath: buildingOptions.Array.data[38]
+      value: 
+      objectReference: {fileID: 9149747765355579397, guid: f60b53d8aa90813479d3dd45b1c729d8,
+        type: 3}
+    - target: {fileID: 7726281432159702725, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
+        type: 3}
+      propertyPath: buildingIcons.Array.data[38]
+      value: 
+      objectReference: {fileID: 21300000, guid: 53d9d46e3ccb3ee4cb397a80f6dcc0c7,
+        type: 3}
+    - target: {fileID: 7726281432159702725, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
+        type: 3}
+      propertyPath: buildingOptions.Array.data[39]
+      value: 
+      objectReference: {fileID: 8615997942845230692, guid: bfa0ae283151b224f92393a7910860a7,
+        type: 3}
+    - target: {fileID: 7726281432159702725, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
+        type: 3}
+      propertyPath: buildingOptions.Array.data[40]
+      value: 
+      objectReference: {fileID: 4852192290780533243, guid: 3613fff9537d1734cbf2222d74ee7228,
+        type: 3}
+    - target: {fileID: 7726281432159702725, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
+        type: 3}
+      propertyPath: buildingIcons.Array.data[39]
+      value: 
+      objectReference: {fileID: 21300000, guid: 53d9d46e3ccb3ee4cb397a80f6dcc0c7,
+        type: 3}
+    - target: {fileID: 7726281432159702725, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
+        type: 3}
+      propertyPath: buildingIcons.Array.data[40]
+      value: 
+      objectReference: {fileID: 21300000, guid: 53d9d46e3ccb3ee4cb397a80f6dcc0c7,
+        type: 3}
     - target: {fileID: 7726281432159702726, guid: 7b7a9ed307d94fb4abce2fbd39823c71,
         type: 3}
       propertyPath: speed
