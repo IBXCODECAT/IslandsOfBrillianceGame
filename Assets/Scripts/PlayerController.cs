@@ -19,6 +19,9 @@ public class PlayerController : MonoBehaviour
 
     Camera cam;
     CharacterController cc;
+
+    bool respawning;
+
     void Awake()
     {
         instance = this;
@@ -35,6 +38,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        if (respawning) return;
         LockCursor();
         Jump();
         Move();
@@ -70,7 +74,6 @@ public class PlayerController : MonoBehaviour
 
     void Jump()
     {
-        Debug.Log("IsGrounded::: " + IsGrounded());
         if (IsGrounded())
         {
             verticalVelocity = -gravity * Time.deltaTime;
@@ -82,11 +85,12 @@ public class PlayerController : MonoBehaviour
         {
             verticalVelocity -= gravity * Time.deltaTime;
 
-            Debug.Log("Vertical Position: " + transform.position.y);
             if (transform.position.y <= -50)
             {
                 Debug.Log("Respawn Player");
+                respawning = true;
                 GameManager.instance.RespawnPlayer();
+                respawning = false;
             }
         }
     }
