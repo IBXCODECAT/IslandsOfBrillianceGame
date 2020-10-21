@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 52209927190021224}
   - component: {fileID: 6211127622974801930}
   - component: {fileID: 4777642961695696612}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Starfish
   m_TagString: DestroyMe
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1790281786731544188}
   - component: {fileID: 8779985707169121434}
   - component: {fileID: 4591322442506803737}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Crab
   m_TagString: DestroyMe
   m_Icon: {fileID: 0}

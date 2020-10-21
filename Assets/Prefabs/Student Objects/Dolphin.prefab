@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 421232104541572446}
   - component: {fileID: 8937888362622814209}
   - component: {fileID: 7429510090337195109}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Dolphin
   m_TagString: DestroyMe
   m_Icon: {fileID: 0}

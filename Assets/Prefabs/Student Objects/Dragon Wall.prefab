@@ -37,7 +37,7 @@ GameObject:
   - component: {fileID: 2274083890422056907}
   - component: {fileID: 7428155442482772722}
   - component: {fileID: -5947390664527633332}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Dragon Wall
   m_TagString: DestroyMe
   m_Icon: {fileID: 0}

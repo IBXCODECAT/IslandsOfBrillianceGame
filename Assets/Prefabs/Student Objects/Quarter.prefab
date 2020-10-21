@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2575231515966201987}
   - component: {fileID: 5824569924885607467}
   - component: {fileID: 4931895774202756516}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Quarter
   m_TagString: DestroyMe
   m_Icon: {fileID: 0}

@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 32506442149125217}
   - component: {fileID: 483541402535721913}
   - component: {fileID: 4985256302924378401}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Hut
   m_TagString: DestroyMe
   m_Icon: {fileID: 0}

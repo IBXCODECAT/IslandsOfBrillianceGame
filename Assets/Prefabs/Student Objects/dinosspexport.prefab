@@ -244,7 +244,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3127154247572220380}
   - component: {fileID: 9035653977472414470}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: dinosspexport
   m_TagString: DestroyMe
   m_Icon: {fileID: 0}

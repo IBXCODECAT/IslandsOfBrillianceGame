@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4579538198441938666}
   - component: {fileID: 5265210843305828107}
   - component: {fileID: 7118840959286468235}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Gold Bar
   m_TagString: DestroyMe
   m_Icon: {fileID: 0}

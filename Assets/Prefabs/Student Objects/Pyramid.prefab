@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 6945277249324616497}
   - component: {fileID: 8588550282204259944}
   - component: {fileID: -7079425945965777029}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Pyramid
   m_TagString: DestroyMe
   m_Icon: {fileID: 0}
