@@ -6,7 +6,10 @@ using TMPro;
 
 public class PlayerBuilding : MonoBehaviour
 {
+
+    #region vars
     public static PlayerBuilding Instance;
+
     public List<GameObject> buildingOptions;
     public List<Sprite> buildingIcons;
 
@@ -48,7 +51,9 @@ public class PlayerBuilding : MonoBehaviour
     int clones;
     Vector3 previousPos;
     int lastSelection;
-    int currentSelection;
+
+    [HideInInspector]
+    public int currentSelection;
 
     Vector3 renderPos1 = Vector3.zero;
     Vector3 renderPos2 = Vector3.zero;
@@ -56,10 +61,14 @@ public class PlayerBuilding : MonoBehaviour
     Camera cam;
     GameObject currentSelectionPreview;
     GameObject lastSelectionPreview;
-    
+
+    #endregion
+
+    #region begin
     private void Awake()
     {
         Instance = this;
+
         constructionModeSelection.SetActive(true); //Select build or destory
         objectSelectionMode.SetActive(false); //Change what object you are placing
         buildModeSelection.SetActive(false); //Choose how to manipulate the object
@@ -86,6 +95,9 @@ public class PlayerBuilding : MonoBehaviour
         buildLimitText.text = "Build Limit: " + worldState.Count + " / " + buildLimit;
     }
 
+    #endregion
+
+    #region vars2
     [HideInInspector]
     public bool buildMode = false;
     bool selectionMode = false;
@@ -97,6 +109,7 @@ public class PlayerBuilding : MonoBehaviour
     bool zRotateMode = false;
     bool showLineRender = false;
     bool scrollable = false;
+    #endregion
 
     private void Update()
     {
@@ -137,6 +150,7 @@ public class PlayerBuilding : MonoBehaviour
         destroyModeSelection.SetActive(destroyMode && !buildMode);
     }
 
+    #region master
     void GetInput()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0) && !destroyMode && buildMode)
@@ -316,10 +330,12 @@ public class PlayerBuilding : MonoBehaviour
             DestroyMode();
         }
     }
+
+    #endregion
+
+    #region Building Functions
     void SelectionMode()
     {
-      
-
         Debug.Log("Calling Selection Mode Function");
 
         float scroll = Input.GetAxis("Mouse ScrollWheel");
@@ -351,14 +367,13 @@ public class PlayerBuilding : MonoBehaviour
                 }
             }
 
-            Debug.Log(currentSelectionPreview); //Already Known
+            Debug.Log(currentSelectionPreview + " already known"); //Already Known
         }
 
-        if(selectionImage.sprite != buildingIcons[currentSelection])
+        if (selectionImage.sprite != buildingIcons[currentSelection])
+        {
             selectionImage.sprite = buildingIcons[currentSelection];
-        //Debug.Log("Current selection: " + currentSelection); 
-
-        //Debug.LogError("The current selection is not within the bounds of the array!");
+        }
 
         if (currentSelection != lastSelection && currentSelectionPreview)
         {
@@ -497,6 +512,9 @@ public class PlayerBuilding : MonoBehaviour
         }
     }
 
+    #endregion
+
+    #region extras
     IEnumerator UpdateLineRender(int updateDelay)
     {
         while (true)
@@ -525,5 +543,7 @@ public class PlayerBuilding : MonoBehaviour
         Debug.Log("on application quit");
         Save();
     }
+
+    #endregion
 }
 
