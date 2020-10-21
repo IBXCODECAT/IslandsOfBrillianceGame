@@ -79,7 +79,16 @@ public class PlayerController : MonoBehaviour
                 verticalVelocity = jumpForce;
         }
         else
+        {
             verticalVelocity -= gravity * Time.deltaTime;
+
+            Debug.Log("Vertical Position: " + transform.position.y);
+            if (transform.position.y <= -50)
+            {
+                Debug.Log("Respawn Player");
+                GameManager.instance.RespawnPlayer();
+            }
+        }
     }
 
     void LockCursor()
