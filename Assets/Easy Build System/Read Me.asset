@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00fcb0528820550499d051030855ca6d, type: 3}
+  m_Name: Read Me
+  m_EditorClassIdentifier: 
+  Icon: {fileID: 2800000, guid: 370a2563776b7ed4283aa0e5b92789de, type: 3}
+  Title: Easy Build System - 4.7.3
+  Subtitle: Advanced Modular Building System
+  Description: Advanced modular building system for Unity.\nEasy, Fast, Scalable,
+    Powerful, crafted to work out of the box.\nIncludes features like physics, save
+    and load, blueprint and others.\nSupport first and third person as well as top
+    down view.\nAdd your own prefabs in some clicks to place or destroy it.\nQuick
+    Start feature to use it with only one click on any scenes.
+  Sections:
+  - Title: Thank you!
+    Description: Thank you for buying Easy Build System !\nDon't forget to register
+      your invoice to have full access to all the contents.\nRead the release notes
+      to know all changes made on the current version.
+    Links:
+    - Link: Register Invoice
+      Url: https://discord.gg/qFM6SNW
+    - Link: Release Notes
+      Url: https://github.com/AdsCryptoz22/EasyBuildSystem/wiki/Release-Notes
+  - Title: Issues?
+    Description: If you've any questions or problems when using the asset, please
+      let us know.\nA Discord channel is available to contact us, you can also us
+      contacted by mail.
+    Links:
+    - Link: Discord Channel
+      Url: https://discord.gg/qFM6SNW
+    - Link: Support Mail
+      Url: AdsStudio12@gmail.com
+  - Title: Documentation & Tutorials
+    Description: You can find the documentation as well as the tutorials links below.\nYou
+      can also check the sample scenes to get an idea of available features.
+    Links:
+    - Link: Documentation
+      Url: https://github.com/AdsCryptoz22/EasyBuildSystem/wiki
+    - Link: Tutorials
+      Url: https://github.com/AdsCryptoz22/EasyBuildSystem/wiki
+  - Title: Feedback?
+    Description: Let us know what you think of asset by writing a review on Asset
+      Store.\nIf you are having any problems with the asset, thanks for report it!
+    Links: []
+  - Title: Integrations
+    Description: 
+    Links:
+    - Link: uNet
+      Url: 
+    - Link: Mirror
+      Url: https://assetstore.unity.com/packages/tools/network/mirror-129321
+    - Link: Voxeland
+      Url: https://assetstore.unity.com/packages/tools/terrain/voxeland-9180
+    - Link: Photon Network (PUN1)
+      Url: https://assetstore.unity.com/packages/tools/network/photon-unity-networking-classic-free-1786
+    - Link: Photon Network (PUN2)
+      Url: https://assetstore.unity.com/packages/tools/network/pun-2-free-119922
+    - Link: Opsive - Third Person Controller
+      Url: https://assetstore.unity.com/packages/templates/systems/third-person-controller-126347
+    - Link: Invector - Third Person Controller
+      Url: https://assetstore.unity.com/packages/templates/systems/third-person-controller-basic-locomotion-template-59332
+  - Title: 
+    Description: "<size=10><color=grey>Copyright \xA9 2015-2020 by Ads Studio 12.
+      All right reserved.</color></size>"
+    Links: []
