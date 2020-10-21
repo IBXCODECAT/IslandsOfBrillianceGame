@@ -6,6 +6,7 @@ using TMPro;
 
 public class PlayerBuilding : MonoBehaviour
 {
+    public static PlayerBuilding Instance;
     public List<GameObject> buildingOptions;
     public List<Sprite> buildingIcons;
 
@@ -58,6 +59,7 @@ public class PlayerBuilding : MonoBehaviour
     
     private void Awake()
     {
+        Instance = this;
         constructionModeSelection.SetActive(true); //Select build or destory
         objectSelectionMode.SetActive(false); //Change what object you are placing
         buildModeSelection.SetActive(false); //Choose how to manipulate the object
@@ -84,7 +86,8 @@ public class PlayerBuilding : MonoBehaviour
         buildLimitText.text = "Build Limit: " + worldState.Count + " / " + buildLimit;
     }
 
-    bool buildMode = false;
+    [HideInInspector]
+    public bool buildMode = false;
     bool selectionMode = false;
     bool rotateMode = false;
     bool scaleMode = false;

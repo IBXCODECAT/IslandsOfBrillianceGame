@@ -70,6 +70,7 @@ public class PlayerController : MonoBehaviour
 
     void Jump()
     {
+        Debug.Log("IsGrounded::: " + IsGrounded());
         if (IsGrounded())
         {
             verticalVelocity = -gravity * Time.deltaTime;
