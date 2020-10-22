@@ -1,9 +1,13 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 guid: dc01f72d7c78fd9408529e950daaf3ff
 =======
 guid: 57890cbcc43570543b6af452934cd2ae
 >>>>>>> origin/Sci-Fi
+=======
+guid: b71a2801e878fa04d977ff8aae230e94
+>>>>>>> origin/new-prefabs
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
