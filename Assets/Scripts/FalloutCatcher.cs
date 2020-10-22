@@ -8,7 +8,7 @@ public class FalloutCatcher : MonoBehaviour
 
     private void Update()
     {
-        if (transform.position.y < -50)
+        if (transform.position.y < 50)
         {
             Debug.Log("fell to far reset");
             PlayerController.instance.enabled = false;
