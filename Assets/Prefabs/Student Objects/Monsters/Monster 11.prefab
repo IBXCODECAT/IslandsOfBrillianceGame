@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3494553706912368032}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.53, z: 0}
   m_LocalScale: {x: 0.20767461, y: 0.20767461, z: 0.20767461}
   m_Children: []
   m_Father: {fileID: 7635442435203012135}
@@ -90,6 +90,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7635442435203012135}
   - component: {fileID: 6542372341764444818}
+  - component: {fileID: 62426391107099796}
   m_Layer: 9
   m_Name: Monster 11
   m_TagString: DestroyMe
@@ -123,5 +124,21 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.70538, y: 3.144815, z: 0.11606687}
-  m_Center: {x: -0.012953043, y: 0.017044306, z: -0.005436912}
+  m_Size: {x: 3.70538, y: 3.1136951, z: 0.11606687}
+  m_Center: {x: -0.012953043, y: 1.5471139, z: -0.005436912}
+--- !u!114 &62426391107099796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4562147871217235484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92afc686494bb34458adba13725e3f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  specRot: {x: 0, y: 0, z: 0}
+  specScale: {x: 1, y: 1, z: 1}
+  originalRot: {x: 0, y: 0, z: 0, w: 0}
+  originalScale: {x: 0, y: 0, z: 0}

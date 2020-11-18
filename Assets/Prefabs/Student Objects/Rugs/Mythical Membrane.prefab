@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1456314428867887028}
   - component: {fileID: 2812630777546668801}
   - component: {fileID: 7239205950989387996}
+  - component: {fileID: 2223491375331445945}
   m_Layer: 9
   m_Name: Mythical Membrane
   m_TagString: DestroyMe
@@ -62,6 +63,22 @@ MonoBehaviour:
   specScale: {x: 1, y: 1, z: 1}
   originalRot: {x: 0, y: 0, z: 0, w: 0}
   originalScale: {x: 0, y: 0, z: 0}
+--- !u!114 &2223491375331445945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4797271900436766607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92afc686494bb34458adba13725e3f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  specRot: {x: 0, y: 0, z: 0}
+  specScale: {x: 0, y: 0, z: 0}
+  originalRot: {x: 0, y: 0, z: 0, w: 0}
+  originalScale: {x: 0, y: 0, z: 0}
 --- !u!1 &5601477543233547315
 GameObject:
   m_ObjectHideFlags: 0
@@ -87,7 +104,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5601477543233547315}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.05, z: 0}
   m_LocalScale: {x: 0.20767461, y: 0.20767461, z: 0.20767461}
   m_Children: []
   m_Father: {fileID: 1456314428867887028}

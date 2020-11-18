@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!135 &8936657428585890984
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851974854504638596}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.0767341
+  m_Center: {x: 0, y: -4.5474735e-13, z: 0.07214659}
 --- !u!1 &2435846687607117811
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,6 +24,7 @@ GameObject:
   - component: {fileID: 1346480023221313701}
   - component: {fileID: 6918439906681308742}
   - component: {fileID: 3203472292753302923}
+  - component: {fileID: 5037193578204337892}
   m_Layer: 9
   m_Name: Flag 1
   m_TagString: DestroyMe
@@ -62,6 +76,22 @@ MonoBehaviour:
   specScale: {x: 1, y: 1, z: 1}
   originalRot: {x: 0, y: 0, z: 0, w: 0}
   originalScale: {x: 0, y: 0, z: 0}
+--- !u!114 &5037193578204337892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2435846687607117811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92afc686494bb34458adba13725e3f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  specRot: {x: 0, y: 0, z: 0}
+  specScale: {x: 0, y: 0, z: 0}
+  originalRot: {x: 0, y: 0, z: 0, w: 0}
+  originalScale: {x: 0, y: 0, z: 0}
 --- !u!65 &7045690007351140074
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -75,19 +105,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.183903, y: 1.1839035, z: 50.65046}
   m_Center: {x: 0, y: -3.5989302e-13, z: 25.32523}
---- !u!135 &8936657428585890984
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1851974854504638596}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1.0767341
-  m_Center: {x: 0, y: -4.5474735e-13, z: 0.07214659}
 --- !u!65 &7864975295783311964
 BoxCollider:
   m_ObjectHideFlags: 0

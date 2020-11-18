@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!65 &4478644777714046490
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878200988998501406}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.183903, y: 1.1839032, z: 50.65045}
+  m_Center: {x: 0, y: 0, z: 25.325226}
 --- !u!1 &2536093754547496069
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,6 +24,7 @@ GameObject:
   - component: {fileID: 1175569311075767251}
   - component: {fileID: 7132824458252907824}
   - component: {fileID: 3353734142244968189}
+  - component: {fileID: -3931599577256071594}
   m_Layer: 9
   m_Name: Flag 5
   m_TagString: DestroyMe
@@ -62,19 +76,22 @@ MonoBehaviour:
   specScale: {x: 1, y: 1, z: 1}
   originalRot: {x: 0, y: 0, z: 0, w: 0}
   originalScale: {x: 0, y: 0, z: 0}
---- !u!65 &4478644777714046490
-BoxCollider:
+--- !u!114 &-3931599577256071594
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1878200988998501406}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_GameObject: {fileID: 2536093754547496069}
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.183903, y: 1.1839032, z: 50.65045}
-  m_Center: {x: 0, y: 0, z: 25.325226}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92afc686494bb34458adba13725e3f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  specRot: {x: 0, y: 0, z: 0}
+  specScale: {x: 0, y: 0, z: 0}
+  originalRot: {x: 0, y: 0, z: 0, w: 0}
+  originalScale: {x: 0, y: 0, z: 0}
 --- !u!135 &8568522203456078880
 SphereCollider:
   m_ObjectHideFlags: 0

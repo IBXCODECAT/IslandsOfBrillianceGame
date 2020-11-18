@@ -103,6 +103,7 @@ GameObject:
   - component: {fileID: 2100444962684469627}
   - component: {fileID: 4555778300088320849}
   - component: {fileID: 5536507111647918178}
+  - component: {fileID: -7416648259839348600}
   m_Layer: 9
   m_Name: Wall with Window and potter
   m_TagString: DestroyMe
@@ -154,6 +155,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   specRot: {x: 0, y: 0, z: 0}
   specScale: {x: 1, y: 1, z: 1}
+  originalRot: {x: 0, y: 0, z: 0, w: 0}
+  originalScale: {x: 0, y: 0, z: 0}
+--- !u!114 &-7416648259839348600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616114125344168897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92afc686494bb34458adba13725e3f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  specRot: {x: 0, y: 0, z: 0}
+  specScale: {x: 0, y: 0, z: 0}
   originalRot: {x: 0, y: 0, z: 0, w: 0}
   originalScale: {x: 0, y: 0, z: 0}
 --- !u!1 &4738401525790854092

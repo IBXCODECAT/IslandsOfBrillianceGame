@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1443661599854958565}
   - component: {fileID: 2825248007697978192}
   - component: {fileID: -5759660995991951783}
+  - component: {fileID: -5488618109116641626}
   m_Layer: 9
   m_Name: Leave the Fish
   m_TagString: DestroyMe
@@ -45,7 +46,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 7.563994, y: 4.616367, z: 0}
-  m_Center: {x: -0.026488543, y: -0.014486551, z: 0}
+  m_Center: {x: -0.026488543, y: 2.3111799, z: 0}
 --- !u!114 &-5759660995991951783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,7 +60,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   specRot: {x: 0, y: 0, z: 0}
-  specScale: {x: 0.5, y: 0.5, z: 0.5}
+  specScale: {x: 1, y: 1, z: 1}
+  originalRot: {x: 0, y: 0, z: 0, w: 0}
+  originalScale: {x: 0, y: 0, z: 0}
+--- !u!114 &-5488618109116641626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4804885269762750430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92afc686494bb34458adba13725e3f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  specRot: {x: 0, y: 0, z: 0}
+  specScale: {x: 0, y: 0, z: 0}
   originalRot: {x: 0, y: 0, z: 0, w: 0}
   originalScale: {x: 0, y: 0, z: 0}
 --- !u!1 &5584823042188199010
@@ -87,7 +104,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5584823042188199010}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 2.29, z: 0}
   m_LocalScale: {x: 0.20767461, y: 0.20767461, z: 0.20767461}
   m_Children: []
   m_Father: {fileID: 1443661599854958565}

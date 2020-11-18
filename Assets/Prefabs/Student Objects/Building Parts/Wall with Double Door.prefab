@@ -527,6 +527,7 @@ GameObject:
   - component: {fileID: 310493262800163451}
   - component: {fileID: 8485323009037589206}
   - component: {fileID: 3615955299527323867}
+  - component: {fileID: 877958230746217619}
   m_Layer: 9
   m_Name: Wall with Double Door
   m_TagString: DestroyMe
@@ -578,6 +579,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   specRot: {x: 0, y: 0, z: 0}
   specScale: {x: 1, y: 1, z: 1}
+  originalRot: {x: 0, y: 0, z: 0, w: 0}
+  originalScale: {x: 0, y: 0, z: 0}
+--- !u!114 &877958230746217619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5869251128093968463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92afc686494bb34458adba13725e3f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  specRot: {x: 0, y: 0, z: 0}
+  specScale: {x: 0, y: 0, z: 0}
   originalRot: {x: 0, y: 0, z: 0, w: 0}
   originalScale: {x: 0, y: 0, z: 0}
 --- !u!1 &6411539292916057993

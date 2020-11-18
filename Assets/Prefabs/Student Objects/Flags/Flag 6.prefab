@@ -1,5 +1,44 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!65 &8685464821314643574
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135393651110466672}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.183903, y: 1.1839035, z: 50.65046}
+  m_Center: {x: 0, y: -3.5989302e-13, z: 25.32523}
+--- !u!65 &337738327273019917
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3108708012865308304}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20, y: 11.560006, z: 0.20000009}
+  m_Center: {x: 0, y: 0.0000038146973, z: 0.000000022351742}
+--- !u!135 &2054019895013258599
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3498826595480807179}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.0767341
+  m_Center: {x: 0, y: -4.5474735e-13, z: 0.07214659}
 --- !u!1 &3613904530397671035
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,6 +50,7 @@ GameObject:
   - component: {fileID: 91583681682037037}
   - component: {fileID: 8352430036502265806}
   - component: {fileID: 4584650943827057667}
+  - component: {fileID: -8810182668463764161}
   m_Layer: 9
   m_Name: Flag 6
   m_TagString: DestroyMe
@@ -62,45 +102,22 @@ MonoBehaviour:
   specScale: {x: 1, y: 1, z: 1}
   originalRot: {x: 0, y: 0, z: 0, w: 0}
   originalScale: {x: 0, y: 0, z: 0}
---- !u!65 &8685464821314643574
-BoxCollider:
+--- !u!114 &-8810182668463764161
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 135393651110466672}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_GameObject: {fileID: 3613904530397671035}
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.183903, y: 1.1839035, z: 50.65046}
-  m_Center: {x: 0, y: -3.5989302e-13, z: 25.32523}
---- !u!135 &2054019895013258599
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3498826595480807179}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1.0767341
-  m_Center: {x: 0, y: -4.5474735e-13, z: 0.07214659}
---- !u!65 &337738327273019917
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3108708012865308304}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 20, y: 11.560006, z: 0.20000009}
-  m_Center: {x: 0, y: 0.0000038146973, z: 0.000000022351742}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92afc686494bb34458adba13725e3f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  specRot: {x: 0, y: 0, z: 0}
+  specScale: {x: 0, y: 0, z: 0}
+  originalRot: {x: 0, y: 0, z: 0, w: 0}
+  originalScale: {x: 0, y: 0, z: 0}
 --- !u!1001 &8648169484751016272
 PrefabInstance:
   m_ObjectHideFlags: 0

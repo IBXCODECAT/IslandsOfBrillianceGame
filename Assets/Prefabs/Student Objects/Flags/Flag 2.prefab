@@ -1,31 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!65 &5014297447428999352
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7357060291270674346}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.183903, y: 1.1839035, z: 50.65046}
-  m_Center: {x: 0, y: -3.5989302e-13, z: 25.32523}
---- !u!135 &7092682508049207811
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6302454344638330065}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1.0767341
-  m_Center: {x: 0, y: -0.000030517578, z: 0.07214277}
 --- !u!65 &7160966972716366809
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39,6 +13,32 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 19.2, y: 10.800005, z: 0.20000009}
   m_Center: {x: 0, y: 0.0000076293945, z: -0.000015258789}
+--- !u!135 &7092682508049207811
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6302454344638330065}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.0767341
+  m_Center: {x: 0, y: -0.000030517578, z: 0.07214277}
+--- !u!65 &5014297447428999352
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7357060291270674346}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.183903, y: 1.1839035, z: 50.65046}
+  m_Center: {x: 0, y: -3.5989302e-13, z: 25.32523}
 --- !u!1 &7643096378255456153
 GameObject:
   m_ObjectHideFlags: 0
@@ -50,6 +50,7 @@ GameObject:
   - component: {fileID: 6445722485661614287}
   - component: {fileID: 3161344908346762796}
   - component: {fileID: 7469610388187907553}
+  - component: {fileID: -4721143521877268903}
   m_Layer: 9
   m_Name: Flag 2
   m_TagString: DestroyMe
@@ -99,6 +100,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   specRot: {x: 0, y: 0, z: 0}
   specScale: {x: 1, y: 1, z: 1}
+  originalRot: {x: 0, y: 0, z: 0, w: 0}
+  originalScale: {x: 0, y: 0, z: 0}
+--- !u!114 &-4721143521877268903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7643096378255456153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92afc686494bb34458adba13725e3f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  specRot: {x: 0, y: 0, z: 0}
+  specScale: {x: 0, y: 0, z: 0}
   originalRot: {x: 0, y: 0, z: 0, w: 0}
   originalScale: {x: 0, y: 0, z: 0}
 --- !u!1001 &1250728694160450962

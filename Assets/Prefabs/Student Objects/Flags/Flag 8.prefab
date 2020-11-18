@@ -1,5 +1,31 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!65 &4512727657661275980
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248989636836035473}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 19.22, y: 10.820004, z: 0.20000009}
+  m_Center: {x: 0, y: 0.0000076293945, z: -0.000015258789}
+--- !u!135 &144999153377021254
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5082317366133951666}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.0767341
+  m_Center: {x: 0, y: -0.000030517578, z: 0.07214277}
 --- !u!1 &6806353040325857102
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,6 +37,7 @@ GameObject:
   - component: {fileID: 7860879068561127448}
   - component: {fileID: 2286676184056454907}
   - component: {fileID: 6038727576958696758}
+  - component: {fileID: -2341692978969877746}
   m_Layer: 9
   m_Name: Flag 8
   m_TagString: DestroyMe
@@ -62,6 +89,22 @@ MonoBehaviour:
   specScale: {x: 1, y: 1, z: 1}
   originalRot: {x: 0, y: 0, z: 0, w: 0}
   originalScale: {x: 0, y: 0, z: 0}
+--- !u!114 &-2341692978969877746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6806353040325857102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92afc686494bb34458adba13725e3f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  specRot: {x: 0, y: 0, z: 0}
+  specScale: {x: 0, y: 0, z: 0}
+  originalRot: {x: 0, y: 0, z: 0, w: 0}
+  originalScale: {x: 0, y: 0, z: 0}
 --- !u!65 &9218463902786716231
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -75,32 +118,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.183903, y: 1.1839035, z: 50.65046}
   m_Center: {x: 0, y: -3.5989302e-13, z: 25.32523}
---- !u!135 &144999153377021254
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5082317366133951666}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1.0767341
-  m_Center: {x: 0, y: -0.000030517578, z: 0.07214277}
---- !u!65 &4512727657661275980
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 248989636836035473}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 19.22, y: 10.820004, z: 0.20000009}
-  m_Center: {x: 0, y: 0.0000076293945, z: -0.000015258789}
 --- !u!1001 &8633750288522327999
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -121,7 +138,7 @@ PrefabInstance:
     - target: {fileID: 828026476448223948, guid: 6aed33bb24d340f4bb2fa6797c1e8155,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.9600002
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 828026476448223948, guid: 6aed33bb24d340f4bb2fa6797c1e8155,
         type: 3}
