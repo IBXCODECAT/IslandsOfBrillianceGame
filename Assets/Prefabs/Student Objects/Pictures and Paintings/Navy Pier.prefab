@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 451318326791835205}
   - component: {fileID: 3854730721956514544}
+  - component: {fileID: -9204253014249203329}
   m_Layer: 9
   m_Name: Navy Pier
   m_TagString: DestroyMe
@@ -45,6 +46,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10.13975, y: 5.51354, z: 0}
   m_Center: {x: -0.04095936, y: 0.028925657, z: 0}
+--- !u!114 &-9204253014249203329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5829325331705638526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92afc686494bb34458adba13725e3f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  specRot: {x: 0, y: 0, z: 0}
+  specScale: {x: 0.5, y: 0.5, z: 0.5}
+  originalRot: {x: 0, y: 0, z: 0, w: 0}
+  originalScale: {x: 0, y: 0, z: 0}
 --- !u!1 &6902553424210714050
 GameObject:
   m_ObjectHideFlags: 0

@@ -90,6 +90,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7586987482505171155}
   - component: {fileID: 6518892709321872486}
+  - component: {fileID: -6249821143730197792}
   m_Layer: 9
   m_Name: Citrus Rug
   m_TagString: DestroyMe
@@ -125,3 +126,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0574713, y: 0.03539586, z: 2.0601625}
   m_Center: {x: -0.0026355386, y: -0.0022400618, z: 0.0012862682}
+--- !u!114 &-6249821143730197792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4606320176122786024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92afc686494bb34458adba13725e3f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  specRot: {x: 0, y: 0, z: 0}
+  specScale: {x: 1, y: 1, z: 1}
+  originalRot: {x: 0, y: 0, z: 0, w: 0}
+  originalScale: {x: 0, y: 0, z: 0}

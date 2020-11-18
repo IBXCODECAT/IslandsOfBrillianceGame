@@ -90,6 +90,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7916178586901018982}
   - component: {fileID: 6838237678769814995}
+  - component: {fileID: -6295718494734244821}
   m_Layer: 9
   m_Name: Rug 3
   m_TagString: DestroyMe
@@ -125,3 +126,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7.7450523, y: 0.03539586, z: 7.8332667}
   m_Center: {x: -0.001009345, y: -0.0022400618, z: 0.0024216175}
+--- !u!114 &-6295718494734244821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4286689460093245789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92afc686494bb34458adba13725e3f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  specRot: {x: 0, y: 0, z: 0}
+  specScale: {x: 0.5, y: 0.5, z: 0.5}
+  originalRot: {x: 0, y: 0, z: 0, w: 0}
+  originalScale: {x: 0, y: 0, z: 0}

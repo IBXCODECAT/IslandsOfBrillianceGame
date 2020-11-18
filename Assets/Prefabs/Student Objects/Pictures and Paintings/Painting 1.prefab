@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6335713857005947439}
   - component: {fileID: 7264689536780848794}
+  - component: {fileID: 5040450827237615496}
   m_Layer: 9
   m_Name: Painting 1
   m_TagString: DestroyMe
@@ -45,6 +46,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.0667086, y: 2.284843, z: 0}
   m_Center: {x: -0.008825779, y: 0.05616641, z: 0}
+--- !u!114 &5040450827237615496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93011050962692628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92afc686494bb34458adba13725e3f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  specRot: {x: 0, y: 0, z: 0}
+  specScale: {x: 1, y: 1, z: 1}
+  originalRot: {x: 0, y: 0, z: 0, w: 0}
+  originalScale: {x: 0, y: 0, z: 0}
 --- !u!1 &1037330170600315304
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1456314428867887028}
   - component: {fileID: 2812630777546668801}
+  - component: {fileID: 7239205950989387996}
   m_Layer: 9
   m_Name: Mythical Membrane
   m_TagString: DestroyMe
@@ -45,6 +46,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.7940416, y: 0.03539586, z: 1.29776}
   m_Center: {x: -0.0010094643, y: -0.0022400618, z: 0.0024209023}
+--- !u!114 &7239205950989387996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4797271900436766607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92afc686494bb34458adba13725e3f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  specRot: {x: 0, y: 0, z: 0}
+  specScale: {x: 1, y: 1, z: 1}
+  originalRot: {x: 0, y: 0, z: 0, w: 0}
+  originalScale: {x: 0, y: 0, z: 0}
 --- !u!1 &5601477543233547315
 GameObject:
   m_ObjectHideFlags: 0
