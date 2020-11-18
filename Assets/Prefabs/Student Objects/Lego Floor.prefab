@@ -1,0 +1,158 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1710591666412128274
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5028990511383196007}
+  - component: {fileID: 4334696779101984235}
+  - component: {fileID: 1645771076629363123}
+  - component: {fileID: 273482084705069079}
+  m_Layer: 9
+  m_Name: Lego Floor
+  m_TagString: DestroyMe
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5028990511383196007
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710591666412128274}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6994271056406340460}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4334696779101984235
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710591666412128274}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.463265, y: 0.057146072, z: 2.461911}
+  m_Center: {x: -0.0028834343, y: 0.00461483, z: 0.0046488047}
+--- !u!114 &1645771076629363123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710591666412128274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92afc686494bb34458adba13725e3f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  specRot: {x: 0, y: 0, z: 0}
+  specScale: {x: 1, y: 1, z: 1}
+  originalRot: {x: 0, y: 0, z: 0, w: 0}
+  originalScale: {x: 0, y: 0, z: 0}
+--- !u!65 &273482084705069079
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710591666412128274}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.463265, y: 0.057146072, z: 2.461911}
+  m_Center: {x: -0.0028834343, y: 0.00461483, z: 0.0046488047}
+--- !u!1001 &5080374008891243674
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5028990511383196007}
+    m_Modifications:
+    - target: {fileID: 1282083958966021605, guid: dd955282af0be4f4bb0a60a194c13f5c,
+        type: 3}
+      propertyPath: m_Name
+      value: legoFloor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282083958966021605, guid: dd955282af0be4f4bb0a60a194c13f5c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2851263764667539446, guid: dd955282af0be4f4bb0a60a194c13f5c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2851263764667539446, guid: dd955282af0be4f4bb0a60a194c13f5c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2851263764667539446, guid: dd955282af0be4f4bb0a60a194c13f5c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2851263764667539446, guid: dd955282af0be4f4bb0a60a194c13f5c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2851263764667539446, guid: dd955282af0be4f4bb0a60a194c13f5c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2851263764667539446, guid: dd955282af0be4f4bb0a60a194c13f5c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2851263764667539446, guid: dd955282af0be4f4bb0a60a194c13f5c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2851263764667539446, guid: dd955282af0be4f4bb0a60a194c13f5c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2851263764667539446, guid: dd955282af0be4f4bb0a60a194c13f5c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2851263764667539446, guid: dd955282af0be4f4bb0a60a194c13f5c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2851263764667539446, guid: dd955282af0be4f4bb0a60a194c13f5c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dd955282af0be4f4bb0a60a194c13f5c, type: 3}
+--- !u!4 &6994271056406340460 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2851263764667539446, guid: dd955282af0be4f4bb0a60a194c13f5c,
+    type: 3}
+  m_PrefabInstance: {fileID: 5080374008891243674}
+  m_PrefabAsset: {fileID: 0}
