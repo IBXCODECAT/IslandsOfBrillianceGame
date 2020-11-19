@@ -24069,27 +24069,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &3914697509234851936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7726281431199287081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9687e2176552e7148bcc07c9bf6f5e09, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  specRot: {x: 0, y: 0, z: 0}
-  specScale: {x: 0, y: 0, z: 0}
-  originalRot: {x: 0, y: 0, z: 0, w: 0}
-  originalScale: {x: 0, y: 0, z: 0}
-  PotatoAlpha: {fileID: 6346033139985001019, guid: 6939068049f396f4bb9b8bc0263c6c6b,
-    type: 3}
-  potatoPosition: {fileID: 962118054}
-  potatoFire: 0.2
-  potatoPower: 1000
 --- !u!222 &4024668247342205259
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25568,7 +25547,6 @@ GameObject:
   - component: {fileID: 7726281431199287086}
   - component: {fileID: 7726281431199287087}
   - component: {fileID: 1510583450}
-  - component: {fileID: 3914697509234851936}
   - component: {fileID: 391738370}
   - component: {fileID: 7726281431199287088}
   m_Layer: 13
@@ -25781,6 +25759,7 @@ MonoBehaviour:
   - {fileID: 4278766355454938851, guid: f62dcc6df4a343b4780ca9039d5e2cd3, type: 3}
   - {fileID: 5445021757582130586, guid: 91bedeb06bf90a541988f86216da738a, type: 3}
   - {fileID: 2228393206463021989, guid: d9b8265436b022d4faad98edde618c30, type: 3}
+  - {fileID: 1968315869243575465, guid: f3f659949913e4d4e8a3de201a4bbdc7, type: 3}
   buildingIcons:
   - {fileID: 21300000, guid: 6a681bfacd483934c83e82afd9199a43, type: 3}
   - {fileID: 21300000, guid: 69249cb056b28994d98f6b3a45373242, type: 3}
@@ -25820,6 +25799,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 53d9d46e3ccb3ee4cb397a80f6dcc0c7, type: 3}
   - {fileID: 21300000, guid: 53d9d46e3ccb3ee4cb397a80f6dcc0c7, type: 3}
   - {fileID: 21300000, guid: 53d9d46e3ccb3ee4cb397a80f6dcc0c7, type: 3}
+  - {fileID: 21300000, guid: b57043dead592db42ab9bfe662eed994, type: 3}
   - {fileID: 21300000, guid: b57043dead592db42ab9bfe662eed994, type: 3}
   - {fileID: 21300000, guid: b57043dead592db42ab9bfe662eed994, type: 3}
   - {fileID: 21300000, guid: b57043dead592db42ab9bfe662eed994, type: 3}
